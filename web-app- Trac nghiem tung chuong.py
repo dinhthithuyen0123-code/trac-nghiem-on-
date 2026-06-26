@@ -31,7 +31,7 @@ st.title("Ôn Luyện Trắc Nghiệm Giao Nhận")
 # 2. Tạo thanh menu chọn chương ở bên trái màn hình (Sidebar)
 chuong_da_chon = st.sidebar.selectbox(
     "📚 Chọn Chương Ôn Tập:",
-    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Câu hỏi hỗn hợp"]
+    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Câu hỏi hỗn hợp", "Đề 1","Đề 2", "Đề 3", "Đề 4", "Đề 5", "Đề 6"]
 )
 # Hiển thị số lượt truy cập nhỏ ở góc dưới sidebar để bạn theo dõi
 st.sidebar.write(f"📊 **Tổng số lượt truy cập:** {tong_luot}")
@@ -463,7 +463,6 @@ elif chuong_da_chon == "Chương 2: Giao nhận bằng đường biển":
         ],
         "dap_an_dung": "B"
     },
-
     {
         "cau_hoi": "Thuê tàu chợ (Liner) có đặc điểm nào?",
         "goi_y": [
@@ -474,7 +473,6 @@ elif chuong_da_chon == "Chương 2: Giao nhận bằng đường biển":
         ],
         "dap_an_dung": "B"
     },
-
     {
         "cau_hoi": "Chứng từ chính của thuê tàu chợ là gì?",
         "goi_y": [
@@ -485,7 +483,6 @@ elif chuong_da_chon == "Chương 2: Giao nhận bằng đường biển":
         ],
         "dap_an_dung": "C"
     },
-
     {
         "cau_hoi": "Trong thuê tàu chợ, ai là người chuyên chở?",
         "goi_y": [
@@ -496,7 +493,6 @@ elif chuong_da_chon == "Chương 2: Giao nhận bằng đường biển":
         ],
         "dap_an_dung": "C"
     },
-
     {
         "cau_hoi": "Thuê tàu chuyến có đặc điểm nào?",
         "goi_y": [
@@ -507,7 +503,6 @@ elif chuong_da_chon == "Chương 2: Giao nhận bằng đường biển":
         ],
         "dap_an_dung": "B"
     },
-
     {
         "cau_hoi": "Hợp đồng thuê tàu chuyến được gọi là gì?",
         "goi_y": [
@@ -518,7 +513,6 @@ elif chuong_da_chon == "Chương 2: Giao nhận bằng đường biển":
         ],
         "dap_an_dung": "B"
     },
-
     {
         "cau_hoi": "Trong thuê tàu chuyến, người thuê tàu có quyền gì?",
         "goi_y": [
@@ -675,7 +669,6 @@ elif chuong_da_chon == "Chương 2: Giao nhận bằng đường biển":
         ],
         "dap_an_dung": "A"
     },
-
     {
         "cau_hoi": "Một trong các trách nhiệm của doanh nghiệp XNK là gì?",
         "goi_y": [
@@ -799,7 +792,6 @@ elif chuong_da_chon == "Chương 2: Giao nhận bằng đường biển":
         ],
         "dap_an_dung": "B"
     },
-
     {
         "cau_hoi": "B/L là viết tắt của cụm từ nào?",
         "goi_y": [
@@ -1187,6 +1179,769 @@ elif chuong_da_chon == "Câu hỏi hỗn hợp":
         ],
         "dap_an_dung": "D"
     }
+    ]
+elif chuong_da_chon == "Đề 1":
+       [
+       {
+        "cau_hoi": "Thuật ngữ tàu mẹ (Mother Vessel) nhằm chỉ loại tàu nào?",
+        "goi_y": [
+            "A.Chạy các tuyến đường dài, lấy hàng từ các cảng chuyển tải hàng hóa",
+            "B.Chạy tuyến nội địa",
+            "C.Chạy gom hàng trong khu vực để chuyển tải tại các cảng chuyển tải hàng hóa quốc tế",
+            "D.Chỉ chạy thẳng từ cảng nhận hàng đến cảng dỡ hàng"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Chức năng KHÔNG PHẢI của vận đơn đường biển (B/L) là gì?",
+        "goi_y": [
+            "A.Là hóa đơn để đòi và trả tiền",
+            "B.Là biên lai của người chuyên chở xác nhận họ đã nhận hàng để chở",
+            "C.Là bằng chứng về những điều khoản của một hợp đồng vận tải đường biển",
+            "D.Là một chứng từ sở hữu hàng hóa sẽ giao cho ai ở cảng đích"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Vận đơn chuyên chở trực tiếp (Direct B/L) áp dụng trong trường hợp nào?",
+        "goi_y": [
+            "A.Hàng hóa không chuyển tải",
+            "B.Hàng hóa có chuyển tải nhưng trách nhiệm thống nhất",
+            "C.Hàng hóa có chuyển tải",
+            "D.Vận tải đa phương thức"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Đặc điểm KHÔNG thuộc phương thức tàu chuyến là gì?",
+        "goi_y": [
+            "A.Tàu chạy theo một lịch trình do chủ tàu định ra",
+            "B.Tàu không chạy theo một lịch trình cố định",
+            "C.Người thuê tàu có thể mặc cả về giá cước",
+            "D.Giá cước chưa bao gồm chi phí xếp dỡ"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Cước phí được trả trước trong tàu chuyến có nghĩa là được trả khi nào?",
+        "goi_y": [
+            "A.Sau khi giao hàng lên tàu",
+            "B.Khi xếp hàng hóa lên tàu và nhận B/L",
+            "C.Dỡ hàng ở cảng đích nhận D/O",
+            "D.Sau khi tính số lượng hàng vận chuyển"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Thuật ngữ tàu Feeder nhằm chỉ loại tàu nào?",
+        "goi_y": [
+            "A.Chạy gom hàng trong khu vực để chuyển tải tại các cảng chuyển tải hàng hóa quốc tế",
+            "B.Chạy tuyến nội địa",
+            "C.Chạy các tuyến đường dài, lấy hàng từ các cảng chuyển tải hàng hóa",
+            "D.Chỉ chạy thẳng từ cảng nhận hàng đến cảng dỡ hàng"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Thuê tàu chợ là việc gì?",
+        "goi_y": [
+            "A.Chủ hàng liên hệ với chủ tàu hoặc đại lý để booking chỗ trên tàu",
+            "B.Chủ hàng thương lượng và ký hợp đồng thuê tàu",
+            "C.Thuê nguyên một tàu chở hàng bách hóa",
+            "D.Thuê tàu chạy tuyến nội địa"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "NOR (Notice of Readiness) được trao cho ai?",
+        "goi_y": [
+            "A.Chủ hàng và cảng",
+            "B.Chủ hàng và đại lý của họ",
+            "C.Cảng",
+            "D.Cảng và môi giới"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Đặc điểm thuộc phương thức tàu chợ là gì?",
+        "goi_y": [
+            "A.Tàu chạy theo một lịch trình công bố trước",
+            "B.Tàu không chạy theo lịch trình cố định",
+            "C.Người thuê tàu có thể mặc cả giá cước",
+            "D.Giá cước chưa bao gồm chi phí xếp dỡ"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Chứng từ vận tải là chứng từ nào?",
+        "goi_y": [
+            "A.Bill of Lading",
+            "B.Certificate of Origin",
+            "C.Bill of Exchange",
+            "D.Letter of Credit"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Nguyên tắc phạt xếp dỡ chậm trong thuê tàu chuyến là gì?",
+        "goi_y": [
+            "A.Khi đã bị phạt thì luôn bị phạt",
+            "B.Thời gian xếp dỡ hết thì các ngày sau không bị phạt",
+            "C.Chỉ phạt trong ngày quy định",
+            "D.Khi đã bị phạt thì thường bị phạt"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Vận đơn hoàn hảo (Clean B/L) là vận đơn như thế nào?",
+        "goi_y": [
+            "A.Không có nhận xét xấu về tình trạng bao bì hoặc hàng hóa",
+            "B.Có nhận xét xấu về hàng hóa",
+            "C.Không có bản copy",
+            "D.Được lập thành 5 bản chính"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Đâu KHÔNG phải là trách nhiệm của người chuyên chở bằng đường biển?",
+        "goi_y": [
+            "A.Niêm phong, kẹp chì hàng hóa",
+            "B.Cung cấp tàu có khả năng đi biển",
+            "C.Chất xếp, chăm sóc và dỡ hàng",
+            "D.Cấp vận đơn đường biển"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Ai là người cấp Lệnh giao hàng (D/O)?",
+        "goi_y": [
+            "A.Người chuyên chở",
+            "B.Cảng dỡ hàng",
+            "C.Người bán",
+            "D.Người mua"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Chọn câu SAI về vận đơn đường biển.",
+        "goi_y": [
+            "A.B/L là hợp đồng vận tải",
+            "B.B/L là bằng chứng của hợp đồng vận tải",
+            "C.B/L là chứng từ sở hữu hàng hóa",
+            "D.B/L là biên lai nhận hàng"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Trong thuê tàu chợ, chứng từ điều chỉnh quan hệ giữa các bên là gì?",
+        "goi_y": [
+            "A.B/L",
+            "B.L/C",
+            "C.Hợp đồng chuyên chở hàng hải",
+            "D.Hóa đơn cước"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Tàu chợ là tàu như thế nào?",
+        "goi_y": [
+            "A.Chuyên chở hàng bách hóa trong container",
+            "B.Có thưởng phạt xếp dỡ",
+            "C.Cước phí do thỏa thuận",
+            "D.Chạy tuyến không cố định"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Cước phí trong thuê tàu chuyến bao gồm?",
+        "goi_y": [
+            "A.Chi phí chở hàng và có thể có chi phí xếp dỡ, sắp đặt hàng",
+            "B.Chỉ chi phí chở hàng",
+            "C.Chi phí chở hàng và xếp dỡ",
+            "D.Chi phí chở hàng và sắp đặt hàng"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Phê chú nào làm mất tính hoàn hảo của vận đơn?",
+        "goi_y": [
+            "A.Bao bì bị rách",
+            "B.Bao bì dùng lại",
+            "C.Không biết chất lượng bên trong",
+            "D.Bao bì dùng lại và không biết chất lượng bên trong"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo Công ước Hamburg, nếu tổn thất rõ rệt thì thông báo tổn thất phải lập khi nào?",
+        "goi_y": [
+            "A.Không muộn hơn ngày làm việc sau ngày giao hàng",
+            "B.Trước hoặc vào lúc giao hàng",
+            "C.Sau khi đưa hàng về kho",
+            "D.Không muộn hơn hai ngày làm việc"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Vận tải là hoạt động gì?",
+        "goi_y": [
+            "A.Độc lập",
+            "B.Sản xuất vật chất",
+            "C.Kinh tế đặc thù",
+            "D.Cả ba ý trên"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Đặc điểm của sản phẩm vận tải là gì?",
+        "goi_y": [
+            "A.Giống các sản phẩm khác",
+            "B.Có thể dự trữ",
+            "C.Quá trình tiêu dùng gắn với quá trình sản xuất",
+            "D.Không có ý nào đúng"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "Hình thức vận chuyển mà người chuyên chở chịu trách nhiệm trên toàn bộ hành trình là gì?",
+        "goi_y": [
+            "A.Nhiều chặng",
+            "B.Chở suốt",
+            "C.Đứt đoạn",
+            "D.Không có đáp án đúng"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Vận tải có tác động đến những lĩnh vực nào?",
+        "goi_y": [
+            "A.Hoạt động kinh doanh",
+            "B.Cán cân thanh toán",
+            "C.Cơ cấu hàng hóa và thị trường",
+            "D.Cả ba ý trên"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Điều kiện Incoterms mà người bán có khả năng vận tải và thông quan nhập khẩu là gì?",
+        "goi_y": [
+            "A.CPT",
+            "B.FCA",
+            "C.DDU",
+            "D.DDP"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Không nên dành quyền vận tải khi nào?",
+        "goi_y": [
+            "A.Thị trường cạnh tranh khốc liệt",
+            "B.Chênh lệch giá CIF và FOB cao",
+            "C.Có khả năng thông quan XNK",
+            "D.Muốn chủ động giao nhận"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Chức năng của cảng biển là gì?",
+        "goi_y": [
+            "A.Neo đậu tàu",
+            "B.Phục vụ hàng hóa và tàu",
+            "C.Cả hai không đúng",
+            "D.Cả A và B đúng"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "DWCC dùng để chỉ gì?",
+        "goi_y": [
+            "A.Trọng lượng tịnh hàng hóa",
+            "B.Trọng lượng cả bì",
+            "C.Trọng lượng tính trên đơn vị thể tích",
+            "D.Cả ba đáp án đều sai"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Dung tích đăng ký tịnh là gì?",
+        "goi_y": [
+            "A.Toàn bộ các khoảng trống trên tàu",
+            "B.Các khoảng trống khép kín trên tàu",
+            "C.Các khoảng trống và phòng thủy thủ",
+            "D.Các khoảng trống và phòng giải trí"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Trọng tải tịnh của tàu là gì?",
+        "goi_y": [
+            "A.Trọng lượng hàng hóa trên tàu",
+            "B.Trọng lượng vật phẩm tiêu dùng",
+            "C.Hành lý thủy thủ",
+            "D.Cả ba đáp án trên"
+        ],
+        "dap_an_dung": "A"
+    }
+    ]
+elif chuong_da_chon == "Đề 2":
+    cac_cau_hoi =[  
+        {
+        "cau_hoi": "Xuyemax là gì?",
+        "goi_y": [
+            "A.Tàu của Xuye",
+            "B.Tàu được tự do đi qua Xuye",
+            "C.Tàu lớn nhất có thể đi qua Xuye",
+            "D.Không có đáp án nào đúng"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "Tàu trẻ là tàu có tuổi bao nhiêu?",
+        "goi_y": [
+            "A.8 - 10 năm",
+            "B.10 - 12 năm",
+            "C.12 - 14 năm",
+            "D.14 - 18 năm"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Đặc điểm của tàu chợ là gì?",
+        "goi_y": [
+            "A.Chuyên chở container",
+            "B.Không thưởng phạt xếp dỡ",
+            "C.Cước phí do thỏa thuận",
+            "D.Chạy tuyến không cố định"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Khi thuê tàu chợ, giấy lưu cước tàu chợ thường do ai cấp?",
+        "goi_y": [
+            "A.Chủ tàu",
+            "B.Chủ hàng",
+            "C.Môi giới",
+            "D.Không có đáp án đúng"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "Vận đơn đường biển KHÔNG phải là gì?",
+        "goi_y": [
+            "A.Xác nhận quyền sở hữu hàng hóa",
+            "B.Xác nhận việc nhận hàng lên tàu",
+            "C.Xác nhận một hợp đồng bảo hiểm",
+            "D.Xác nhận một hợp đồng chuyên chở"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "Việt Nam đã tham gia công ước nào sau đây?",
+        "goi_y": [
+            "A.Quy tắc Hague",
+            "B.Công ước Hamburg",
+            "C.Nghị định thư SDR",
+            "D.Không có đáp án đúng"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Theo luật Anh, thời hạn được coi là tổn thất toàn bộ khi nào?",
+        "goi_y": [
+            "A.Tàu không về cảng chỉ định sau 3 tháng",
+            "B.Tàu không về cảng chỉ định sau 60 ngày",
+            "C.Tàu gặp bão về muộn 45 ngày",
+            "D.Tàu rời cảng đi 90 ngày chưa đến cảng đích"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Việc chuyên chở hàng súc vật sống được quy định trong văn bản nào?",
+        "goi_y": [
+            "A.Quy tắc Hague",
+            "B.Công ước Hamburg",
+            "C.Luật thương mại quốc tế",
+            "D.Hiệp định WTO"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Giới hạn trách nhiệm là gì?",
+        "goi_y": [
+            "A.Số tiền tối đa mà chủ tàu phải bồi thường",
+            "B.Số tiền người bảo hiểm phải trả",
+            "C.Số tiền tối đa được bồi thường",
+            "D.Không có đáp án đúng"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo Luật Hàng hải Việt Nam, tàu chậm giao được tính trong bao nhiêu ngày?",
+        "goi_y": [
+            "A.1 ngày",
+            "B.3 ngày",
+            "C.15 ngày",
+            "D.60 ngày"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Để tránh phí xếp hàng lên tàu hai lần, người bán theo điều kiện CIF nên thuê tàu theo điều kiện nào?",
+        "goi_y": [
+            "A.FO",
+            "B.FI",
+            "C.FIS",
+            "D.FIOT"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Thuê ướt là hình thức thuê nào?",
+        "goi_y": [
+            "A.Thuê tàu không có thủy thủ",
+            "B.Thuê cả tàu và thủy thủ",
+            "C.Thuê tàu, thủy thủ và thực phẩm",
+            "D.Thuê từng chuyến"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Đặc trưng nổi bật nhất của container là gì?",
+        "goi_y": [
+            "A.Thích ứng vận chuyển và xếp dỡ",
+            "B.Phù hợp nhiều loại phương tiện",
+            "C.Hình dáng thích hợp",
+            "D.Thể tích trên 1 m3"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Tàu chạy đến các điểm Hub và hàng được chuyển tiếp là loại tàu nào?",
+        "goi_y": [
+            "A.Tàu chợ",
+            "B.Tàu chuyến",
+            "C.Feeder",
+            "D.Tàu chạy thẳng"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "Loại hàng nào không thích hợp vận chuyển bằng container?",
+        "goi_y": [
+            "A.Hàng hải sản đông lạnh",
+            "B.Hàng khối lượng lớn",
+            "C.Hàng siêu trường siêu trọng",
+            "D.Hàng lỏng"
+        ],
+        "dap_an_dung": "C"
+    },
+    ]
+elif chuong_da_chon == "Đề 2":
+    cac_cau_hoi =[  
+        {
+        "cau_hoi": "Vận đơn đường biển không phải là gì?",
+        "goi_y": [
+            "A.Xác nhận một hợp đồng bảo hiểm",
+            "B.Xác nhận quyền sở hữu hàng hóa",
+            "C.Xác nhận một hợp đồng chuyên chở",
+            "D.Xác nhận hàng đã được xếp lên tàu"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Đặc điểm của phương thức thuê tàu chợ là gì?",
+        "goi_y": [
+            "A.Chuyên chở hàng hóa có số lượng tùy ý, cảng xếp dỡ nằm trong lịch trình của tàu",
+            "B.Chuyên chở hàng hóa có số lượng cố định, cảng xếp dỡ nằm trong lịch trình của tàu",
+            "C.Cảng xếp dỡ không cố định trong lịch trình của tàu",
+            "D.Chuyên chở hàng hóa cố định, cảng xếp dỡ tùy chủ hàng quyết định"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Cảng ICD là gì?",
+        "goi_y": [
+            "A.Là một địa điểm thông quan hàng hóa nằm trong nội địa",
+            "B.Là cảng container nằm trong nội địa",
+            "C.Là nơi trung chuyển hàng hóa xuất nhập khẩu nằm trong nội địa",
+            "D.Là cảng cạn nơi có các dịch vụ Logistics giúp giải phóng hàng nhanh nằm trong nội địa"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Ưu điểm nổi bật của vận tải biển là gì?",
+        "goi_y": [
+            "A.Giá thành và chi phí thấp",
+            "B.Thời gian vận chuyển nhanh",
+            "C.Đảm bảo sự an toàn cho hàng hóa",
+            "D.Chở được hàng hóa siêu trường siêu trọng"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Một bộ B/L thường gồm bao nhiêu bản?",
+        "goi_y": [
+            "A.Phát hành 03 bản gốc và nhiều bản sao",
+            "B.Chỉ phát hành một bản gốc và một bản sao",
+            "C.Phát hành theo quy định của Công ước Hamburg",
+            "D.Phát hành tùy theo yêu cầu của người mua"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Estimated Time Arrival được viết tắt là gì?",
+        "goi_y": [
+            "A.ETA",
+            "B.ETD",
+            "C.ETB",
+            "D.ETC"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện FOB (Incoterms 2010), người bán có trách nhiệm gì?",
+        "goi_y": [
+            "A.Chịu mọi chi phí và rủi ro cho đến khi hàng được giao trên tàu tại cảng xuất khẩu",
+            "B.Chịu mọi rủi ro cho đến khi hàng được giao trên tàu tại cảng xuất khẩu",
+            "C.Chịu mọi chi phí và rủi ro cho đến khi hàng được giao qua lan can tàu",
+            "D.Chịu trách nhiệm thuê tàu"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo phương thức thanh toán L/C, yêu cầu xuất trình về vận đơn là gì?",
+        "goi_y": [
+            "A.Trọn bộ (Full Set) B/L",
+            "B.Vận đơn hoàn hảo",
+            "C.Vận đơn ký hậu",
+            "D.Vận đơn đích danh"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Booking Confirmation được phát hành bởi ai?",
+        "goi_y": [
+            "A.Người chuyên chở",
+            "B.Công ty giao nhận",
+            "C.Người gửi hàng",
+            "D.A hoặc B"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "GPS là viết tắt của cụm từ nào?",
+        "goi_y": [
+            "A.Global Positioning Systems",
+            "B.Greenwich Placement Systems",
+            "C.German Placement Systems",
+            "D.Global Placement Systems"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Mô tả nào đúng nhất về dịch vụ Feeder Service?",
+        "goi_y": [
+            "A.Là vận tải đường thủy nội địa",
+            "B.Cung cấp hàng hóa cho các tàu mẹ (Mother Vessels)",
+            "C.Giúp tàu biển giảm thời gian sử dụng tại cảng",
+            "D.Là hành trình giữa cảng biển chính và cảng sông"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Loại chi phí nào không thuộc cơ cấu giá cước vận tải biển?",
+        "goi_y": [
+            "A.Chi phí đóng gói tại cơ sở người bán",
+            "B.Cước vận tải chính và phụ",
+            "C.Chi phí xếp dỡ container",
+            "D.Chi phí lưu kho bãi và phụ phí"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Ký hiệu DWT (Deadweight Tonnage) có nghĩa là gì?",
+        "goi_y": [
+            "A.Trọng tải của tàu biển",
+            "B.Trọng lượng thân tàu",
+            "C.Dung tích chứa hàng",
+            "D.Mớn nước tàu"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Trên vận đơn theo lệnh, mục Consignee ghi như thế nào?",
+        "goi_y": [
+            "A.To order of...",
+            "B.Tên người nhận hàng",
+            "C.Tên Notify Party",
+            "D.Tên người gửi hàng"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Nếu thanh toán bằng L/C (ABC Bank), mục Consignee trên B/L sẽ ghi thế nào?",
+        "goi_y": [
+            "A.To order of ABC Bank",
+            "B.Tên người nhập khẩu",
+            "C.Tên người mở L/C",
+            "D.To order of shipper"
+        ],
+        "dap_an_dung": "A"
+    },
+     {
+        "cau_hoi": "Nếu trên vận tải đơn, ở mục Consignee ghi là 'TO ORDER' thì để nhận hàng tại cảng đích cần có điều kiện gì?",
+        "goi_y": [
+            "A.Người nhận hàng cần xuất trình bản original có ký hậu của người gửi hàng (Shipper)",
+            "B.Người nhận hàng chỉ cần xuất trình 1 bản copy của vận đơn",
+            "C.Người nhận hàng cần xuất trình 1 bản original",
+            "D.Ngân hàng của người gửi hàng ký hậu vận đơn"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Nếu trên hợp đồng ngoại thương có điều kiện Incoterms là FAS hoặc FOB thì trên vận tải đơn, cước tàu sẽ được thể hiện như thế nào?",
+        "goi_y": [
+            "A.Freight Collect",
+            "B.Freight Prepaid",
+            "C.Trả trước khi khai hải quan xuất khẩu",
+            "D.Trả sau khi phát hành Bill of Lading"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Nếu trên hợp đồng ngoại thương có điều kiện Incoterms là CFR hoặc CIF thì trên vận tải đơn, cước tàu sẽ được thể hiện như thế nào?",
+        "goi_y": [
+            "A.Freight Prepaid",
+            "B.Freight Collect",
+            "C.Trả sau khi khai hải quan nhập khẩu",
+            "D.Trả sau khi phát hành Bill of Lading"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Vận đơn đã xuất trình (Surrendered Bill of Lading) có ý nghĩa gì?",
+        "goi_y": [
+            "A.Người gửi hàng đã xuất trình cho hãng tàu ở đầu khởi hành thay cho người nhận hàng để nhận hàng tại đích đến",
+            "B.Người gửi hàng xuất trình cho hãng tàu tại cảng chuyển tải",
+            "C.Người nhận hàng đã xuất trình ở cảng xếp hàng",
+            "D.Người nhận hàng đã xuất trình tại cảng dỡ trước khi tàu đến"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Điện giao hàng (Telex Release) đối với Surrendered Bill of Lading có ý nghĩa gì?",
+        "goi_y": [
+            "A.Là chỉ thị giao hàng do hãng tàu đầu khởi hành gửi cho đại lý hãng tàu ở cảng đích",
+            "B.Là chỉ thị giao hàng do người gửi hàng gửi cho người nhận hàng",
+            "C.Là chỉ thị của hãng tàu cảng đích gửi cho hãng tàu đầu khởi hành",
+            "D.Là chỉ thị của hãng tàu gửi cho hải quan cảng dỡ"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Kích thước của container kín 40 feet cao (40HC/40HQ) là bao nhiêu?",
+        "goi_y": [
+            "A.40' × 8' × 9'6\"",
+            "B.40' × 8' × 8'6\"",
+            "C.40' × 8' × 8'",
+            "D.45' × 8' × 9'6\""
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Phí THC (Terminal Handling Charge) trong vận tải biển bằng container là gì?",
+        "goi_y": [
+            "A.Phí xếp dỡ hàng do hãng tàu thu người gửi và người nhận hàng",
+            "B.Phí nhiên liệu chạy tàu",
+            "C.Phí an ninh cảng",
+            "D.Phí dịch vụ hàng xuất khẩu"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Phí Demurrage phát sinh khi nào?",
+        "goi_y": [
+            "A.Chủ hàng để container có hàng tại bãi cảng quá thời gian miễn phí",
+            "B.Chủ hàng giữ container tại kho riêng quá thời gian miễn phí",
+            "C.Chủ hàng để hàng tại kho CFS quá thời gian",
+            "D.Chủ hàng để hàng trong kho ngoại quan quá thời gian"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Phí Detention phát sinh khi nào?",
+        "goi_y": [
+            "A.Chủ hàng giữ vỏ container của hãng tàu tại kho riêng quá thời hạn cho phép",
+            "B.Chủ hàng để container tại bãi cảng quá thời hạn",
+            "C.Chủ hàng để hàng tại kho CFS quá thời hạn",
+            "D.Chủ hàng để hàng trong kho ngoại quan quá thời hạn"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Trong phương thức FCL, ai chịu trách nhiệm đóng hàng và bấm seal hãng tàu vào container tại đầu cảng xếp?",
+        "goi_y": [
+            "A.Người gửi hàng",
+            "B.Hãng tàu",
+            "C.Cơ quan hải quan",
+            "D.Người nhận hàng"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Trong phương thức LCL, ai chịu trách nhiệm đóng hàng vào container và bấm seal tại kho CFS?",
+        "goi_y": [
+            "A.Người gom hàng lẻ (Consolidator)",
+            "B.Người gửi hàng",
+            "C.Hãng tàu",
+            "D.Người nhận hàng"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Nơi tiến hành giao nhận container rỗng và container có hàng tại cảng là gì?",
+        "goi_y": [
+            "A.Container Yard (CY)",
+            "B.Kho ngoại quan",
+            "C.Container Freight Station (CFS)",
+            "D.Cầu tàu"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Trong phương thức gửi hàng LCL, hàng hóa thường được giao nhận tại đâu?",
+        "goi_y": [
+            "A.Kho CFS (Container Freight Station)",
+            "B.Bãi CY (Container Yard)",
+            "C.Cầu tàu",
+            "D.Kho riêng của chủ hàng"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Kênh đào Panama giúp rút ngắn hành trình vận tải giữa hai đại dương nào?",
+        "goi_y": [
+            "A.Thái Bình Dương và Đại Tây Dương",
+            "B.Đại Tây Dương và Ấn Độ Dương",
+            "C.Thái Bình Dương và Ấn Độ Dương",
+            "D.Bắc Băng Dương và Thái Bình Dương"
+        ],
+        "dap_an_dung": "A"
+    },
     ]
 # 3. Phần hiển thị và chấm điểm (Giữ nguyên cho tất cả các chương)
 st.header(f"📝 {chuong_da_chon}")
