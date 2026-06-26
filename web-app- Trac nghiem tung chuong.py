@@ -1,14 +1,45 @@
 import streamlit as st
-st.title("Ôn Luyện Trắc Nghiệm giao nhận")
-# 1. Tạo thanh menu chọn chương ở bên trái màn hình (Sidebar)
+import streamlit_analytics
+import os
+# 1. Hàm tự động đếm và lưu lượt truy cập vào file text
+def dem_luot_truy_cap():
+    file_name = "luot_truy_cap.txt"
+    # Nếu file chưa tồn tại thì tạo mới với số 0
+    if not os.path.exists(file_name):
+        with open(file_name, "w") as f:
+            f.write("0")
+            
+    # Đọc số lượt hiện tại, tăng lên 1 và ghi lại
+    with open(file_name, "r") as f:
+        luot = int(f.read().strip())
+    luot += 1
+    with open(file_name, "w") as f:
+        f.write(str(luot))
+    return luot
+# Gọi hàm đếm lượt truy cập ngay khi mở trang web
+if 'da_dem' not in st.session_state:
+    st.session_state['da_dem'] = True
+    tong_luot = dem_luot_truy_cap()
+else:
+    # Nếu chỉ F5 hoặc đổi chương thì giữ nguyên số cũ, không đếm tăng lên
+    if os.path.exists("luot_truy_cap.txt"):
+        with open("luot_truy_cap.txt", "r") as f:
+            tong_luot = int(f.read().strip())
+    else:
+        tong_luot = 1
+# --- BẮT ĐẦU GIAO DIỆN WEB ---
+st.title("Ôn Luyện Trắc Nghiệm Giao Nhận")
+# 2. Tạo thanh menu chọn chương ở bên trái màn hình (Sidebar)
 chuong_da_chon = st.sidebar.selectbox(
     "📚 Chọn Chương Ôn Tập:",
-    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển","Câu hỏi hỗn hợp"]
+    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Câu hỏi hỗn hợp"]
 )
-# 2. Thiết lập kho câu hỏi cho từng chương
+# Hiển thị số lượt truy cập nhỏ ở góc dưới sidebar để bạn theo dõi
+st.sidebar.write(f"📊 **Tổng số lượt truy cập:** {tong_luot}")
+# 3. Thiết lập kho câu hỏi cho từng chương
 if chuong_da_chon == "Chương 1: Tổng quan về giao nhận hàng hóa":
     cac_cau_hoi = [
-         {
+        {
         "cau_hoi": "Theo FIATA, dịch vụ giao nhận bao gồm hoạt động nào sau đây?",
         "goi_y": [
             "A.Chỉ vận chuyển hàng hóa",
@@ -729,7 +760,7 @@ elif chuong_da_chon == "Chương 2: Giao nhận bằng đường biển":
         ],
         "dap_an_dung": "A"
     },
-       {
+    {
         "cau_hoi": "Yêu cầu quan trọng nhất khi giao nhận hàng hóa xuất khẩu tại cảng biển là gì?",
         "goi_y": [
             "A.Chỉ cần giao hàng đúng thời gian",
@@ -1086,25 +1117,25 @@ elif chuong_da_chon == "Câu hỏi hỗn hợp":
     {
         "cau_hoi": "Dấu hiệu để nhận biết vận đơn chủ (MBL) là:",
         "goi_y": ["A.Vận đơn do người gom hàng (công ty giao nhận) phát hành", 
-                  "B.Vận đơn do hãng tàu phát hành, mục shipper ghi tên người gom hàng (công ty giao nhận), mục consignee ghi tên đại lý của người gom hàng ở nước nhập khẩu", 
-                  "C.Tiêu đề vận đơn ghi: Bill of Lading",
-                  "D. Mục shipper ghi tên người chủ hàng (người bán), mục consignee ghi tên người nhận hàng (người mua)"],
+                "B.Vận đơn do hãng tàu phát hành, mục shipper ghi tên người gom hàng (công ty giao nhận), mục consignee ghi tên đại lý của người gom hàng ở nước nhập khẩu", 
+                "C.Tiêu đề vận đơn ghi: Bill of Lading",
+                "D. Mục shipper ghi tên người chủ hàng (người bán), mục consignee ghi tên người nhận hàng (người mua)"],
         "dap_an_dung": "B"
     },
     {
         "cau_hoi": "Hợp đồng mua bán hàng hóa có ghi 'Terms of payment: 20% TT in advance, 80% TT must be paid within 3 days after receiving B/L copy...'. Vậy chứng từ nào KHÔNG cần có ký hậu của chuyển tiền 80% giá trị còn lại của hợp đồng?",
         "goi_y": ["A.Sale contract", 
-                  "B.B/L (copy)", 
-                  "C.Invoice",
-                  "D.DO"],
+                "B.B/L (copy)", 
+                "C.Invoice",
+                "D.DO"],
         "dap_an_dung": "D"
     },
     {
         "cau_hoi": "Hợp đồng mua bán hàng hóa có ghi 'Terms of payment: 20% TT in advance, 80% TT must be paid within 3 days after receiving B/L copy...'. Vậy chứng từ nào KHÔNG cần có ký hậu của chuyển tiền 80% giá trị còn lại của hợp đồng?",
         "goi_y": ["A.Sale contract", 
-                  "B.B/L (copy)", 
-                  "C.Invoice",
-                  "D.DO"],
+                "B.B/L (copy)", 
+                "C.Invoice",
+                "D.DO"],
         "dap_an_dung": "D"
     },
     {
@@ -1137,7 +1168,7 @@ elif chuong_da_chon == "Câu hỏi hỗn hợp":
         ],
         "dap_an_dung": "A"
     },
-     {
+    {
         "cau_hoi": "Trên booking có thông tin: Demurrage and Detention for dry free: 10 calendar days. Phí Demurrage: 30 USD/cont 20'/day. Phí Detention: 30 USD/cont 20'/day. Ngày 01/06 lấy vỏ đóng hàng, hạ cont hàng ở bãi ngày 08/06, ngày 20/06 hàng lên tàu. Cont hàng này phải chịu phụ phí như thế nào?",
         "goi_y": [
             "A. Phí DET 150 USD",
