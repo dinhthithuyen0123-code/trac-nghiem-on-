@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit_analytics
 import os
 # 1. Hàm tự động đếm và lưu lượt truy cập vào file text
 def dem_luot_truy_cap():
