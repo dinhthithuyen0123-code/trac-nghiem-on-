@@ -1181,7 +1181,7 @@ elif chuong_da_chon == "Câu hỏi hỗn hợp":
     }
     ]
 elif chuong_da_chon == "Đề 1":
-       [
+    cac_cau_hoi =[  
        {
         "cau_hoi": "Thuật ngữ tàu mẹ (Mother Vessel) nhằm chỉ loại tàu nào?",
         "goi_y": [
