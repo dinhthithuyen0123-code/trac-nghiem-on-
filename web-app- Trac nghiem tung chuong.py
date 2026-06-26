@@ -3,7 +3,7 @@ st.title("Ôn Luyện Trắc Nghiệm giao nhận")
 # 1. Tạo thanh menu chọn chương ở bên trái màn hình (Sidebar)
 chuong_da_chon = st.sidebar.selectbox(
     "📚 Chọn Chương Ôn Tập:",
-    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển"]
+    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển","Câu hỏi hỗn hợp"]
 )
 # 2. Thiết lập kho câu hỏi cho từng chương
 if chuong_da_chon == "Chương 1: Tổng quan về giao nhận hàng hóa":
@@ -1030,10 +1030,134 @@ elif chuong_da_chon == "Chương 2: Giao nhận bằng đường biển":
         ],
         "dap_an_dung": "C"
     }
-
     ]
-       
-
+elif chuong_da_chon == "Câu hỏi hỗn hợp":
+    cac_cau_hoi =[  
+        {
+        "cau_hoi": "Ai là người có thẩm quyền ký phát hành vận đơn đường biển:",
+        "goi_y": ["A. Chủ hàng", "B. Thuyền trưởng hoặc thuyền phó thuyền trưởng", "C. Hãng tàu hoặc đại lý hãng tàu", "D. B và C đều đúng"],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Nội dung nào sau đây KHÔNG là chức năng của vận đơn đường biển:",
+        "goi_y": ["A. Là chứng từ bảo hiểm", "B. Bằng chứng về việc người vận chuyển đã nhận hàng hóa với số lượng, chủng loại, tình trạng như được ghi trong vận đơn để vận chuyển đến nơi trả hàng", "C. Bằng chứng về sở hữu hàng hóa", "D. Bằng chứng của hợp đồng vận chuyển hàng hóa bằng đường biển"],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Người giao nhận có thể đóng những vai trò nào sau đây?",
+        "goi_y": ["A. Người chuyên chở", "B.Đại lý của người chuyên chở hoặc của người gửi hàng, người gom hàng", "C. Môi giới hải quan", "D. Tất cả các đáp án đều đúng"],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "LO-LO charge là gì?",
+        "goi_y": ["A. Phí nâng hạ container", "B.Phí xếp dỡ tại cảng (từ cảng lên tàu hoặc từ tàu xuống cảng)", "C.Phí vệ sinh container", "D. Phụ phí nhiên liệu"],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "EIR là gì?",
+        "goi_y": ["A. Phiếu giao nhận container", "B.Phiếu xác nhận khối lượng toàn bộ container", "C.Giấy chứng nhận xuất xứ hàng hóa", "D. Lệnh giao hàng"],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Nội dung nào sau đây là trách nhiệm của người giao nhận khi thuê một người xuất khẩu (điều kiện giao hàng CFR)?",
+        "goi_y": ["A. Giám sát toàn bộ hành trình vận chuyển hàng hóa đến khi cấp chứng từ nhập khẩu", "B.Đưa hàng hóa ra cảng và làm thủ tục thông quan xuất khẩu", "C.Thuê phương tiện vận chuyển", "D. Tất cả các đáp án đều đúng"],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Nội dung nào sau đây KHÔNG có trên vận đơn hàng không?",
+        "goi_y": ["A. Thông tin về cước phí", "B.Mô tả khái quát về hàng hóa", "C.Số lượng bản gốc vận đơn ghi bằng số và bằng chữ", "D. Sân bay đi và sân bay đến"],
+        "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "Trong phương thức nhờ thu kèm chứng từ (Documentary Collection), ngân hàng nhờ thu KHÔNG có trách nhiệm nào sau đây?",
+        "goi_y": ["A. Kiểm tra tính đầy đủ của chứng từ (số loại chứng từ, số lượng mỗi loại, bản gốc, bản sao)", "B.Thực hiện đúng chỉ thị trong Đơn yêu cầu nhờ thu", "C.Kiểm tra tính chân thật của bộ chứng từ nhờ thu (chữ ký)", "D. Kiểm tra, đối chiếu nội dung các chứng từ"],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Trên booking: 'Closing time (cut-off time)' có ý nghĩa là gì?",
+        "goi_y": ["A. Thời hạn cuối cùng mà người gửi hàng hoàn tất thủ tục để cho cảng bốc xếp container lên tàu", "B.Thời hạn cuối cùng mà người gửi hàng phải gửi SI cho hãng tàu để hãng tàu làm B/L", "C.Không đáp án nào đúng", "D. Thời hạn cuối cùng mà người gửi hàng phải gửi VGM cho hãng tàu"],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Phương thức vận tải nào là phù hợp nhất để vận chuyển Bắc – Nam loại hàng cồng kềnh, khối lượng lớn, giá trị thấp, lưu thông (như vật liệu xây dựng, than đá...)?",
+        "goi_y": ["A. Đường ô tô", "B.Đường sắt", "C.Đường thủy nội địa", "D. Đường hàng không"],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Dấu hiệu để nhận biết vận đơn chủ (MBL) là:",
+        "goi_y": ["A.Vận đơn do người gom hàng (công ty giao nhận) phát hành", 
+                  "B.Vận đơn do hãng tàu phát hành, mục shipper ghi tên người gom hàng (công ty giao nhận), mục consignee ghi tên đại lý của người gom hàng ở nước nhập khẩu", 
+                  "C.Tiêu đề vận đơn ghi: Bill of Lading",
+                  "D. Mục shipper ghi tên người chủ hàng (người bán), mục consignee ghi tên người nhận hàng (người mua)"],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Hợp đồng mua bán hàng hóa có ghi 'Terms of payment: 20% TT in advance, 80% TT must be paid within 3 days after receiving B/L copy...'. Vậy chứng từ nào KHÔNG cần có ký hậu của chuyển tiền 80% giá trị còn lại của hợp đồng?",
+        "goi_y": ["A.Sale contract", 
+                  "B.B/L (copy)", 
+                  "C.Invoice",
+                  "D.DO"],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Hợp đồng mua bán hàng hóa có ghi 'Terms of payment: 20% TT in advance, 80% TT must be paid within 3 days after receiving B/L copy...'. Vậy chứng từ nào KHÔNG cần có ký hậu của chuyển tiền 80% giá trị còn lại của hợp đồng?",
+        "goi_y": ["A.Sale contract", 
+                  "B.B/L (copy)", 
+                  "C.Invoice",
+                  "D.DO"],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Giả sử lô hàng 01 container 20'DC nhập khẩu theo điều kiện FOB từ Qingdao (Trung Quốc) đến Hải Phòng (Việt Nam). Chi phí gồm: vận chuyển nội địa đầu xuất 120 USD, local charges đầu xuất 300 USD, thủ tục hải quan đầu xuất 45 USD, cước tàu và phụ phí 220 USD, bảo hiểm 180 USD, local charges đầu nhập 240 USD, thủ tục hải quan đầu nhập 65 USD, vận chuyển từ cảng Hải Phòng về kho khách hàng 150 USD. Nếu bạn là nhân viên sales của công ty Logistics, bạn sẽ báo giá cho khách hàng A (bên nhập khẩu) chi phí làm lô hàng nhập này là bao nhiêu?",
+        "goi_y": [
+            "A. 1.190 USD",
+            "B. 1.310 USD",
+            "C. 845 USD",
+            "D. 625 USD"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "Công ty X tại Việt Nam nhập hàng từ Trung Quốc bằng đường biển. Người bán chịu trách nhiệm và chi phí cho tới khi hàng được giao trên tàu tại cảng đi ở Trung Quốc, người mua chịu mọi chi phí và rủi ro từ đó về KCN Quang Minh Industrial Zone Hanoi (VN). Điều kiện Incoterms 2020 nào phù hợp?",
+        "goi_y": [
+            "A. FOB, Qingdao, Incoterms 2020",
+            "B. CPT, Quang Minh Industrial Zone Hanoi (VN), Incoterms 2020",
+            "C. DAP, Quang Minh Industrial Zone Hanoi (VN), Incoterms 2020",
+            "D. CIP, Quang Minh Industrial Zone Hanoi (VN), Incoterms 2020"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Hàng rau quả, trái cây xuất khẩu thường được đóng trong loại container nào?",
+        "goi_y": [
+            "A. 40' RE",
+            "B. 40' OT",
+            "C. 40' DC",
+            "D. 20' RE"
+        ],
+        "dap_an_dung": "A"
+    },
+     {
+        "cau_hoi": "Trên booking có thông tin: Demurrage and Detention for dry free: 10 calendar days. Phí Demurrage: 30 USD/cont 20'/day. Phí Detention: 30 USD/cont 20'/day. Ngày 01/06 lấy vỏ đóng hàng, hạ cont hàng ở bãi ngày 08/06, ngày 20/06 hàng lên tàu. Cont hàng này phải chịu phụ phí như thế nào?",
+        "goi_y": [
+            "A. Phí DET 150 USD",
+            "B. Phí DEM và DET 300 USD",
+            "C. Phí DEM 210 USD",
+            "D. Phí DEM và DET 600 USD"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Tính cước theo lô hàng vận chuyển bằng đường hàng không từ cửa đến cửa. Lô hàng gồm 3 kiện, mỗi kiện nặng 60 kg, kích thước 80 cm × 60 cm × 60 cm. Biết biểu cước: dưới 100 kg cước 3 USD/kg; từ 100 kg tới dưới 250 kg cước 2,5 USD/kg; từ 250 kg tới dưới 500 kg cước 2 USD/kg.",
+        "goi_y": [
+            "A. Không đáp án nào đúng",
+            "B. 486 USD",
+            "C. 375 USD",
+            "D. 405 USD"
+        ],
+        "dap_an_dung": "D"
+    }
+    ]
 # 3. Phần hiển thị và chấm điểm (Giữ nguyên cho tất cả các chương)
 st.header(f"📝 {chuong_da_chon}")
 st.write("Hãy hoàn thành các câu hỏi trắc nghiệm dưới đây:")
