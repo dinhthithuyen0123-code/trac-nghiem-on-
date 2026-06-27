@@ -31,7 +31,7 @@ st.title("Ôn Luyện Trắc Nghiệm Giao Nhận")
 # 2. Tạo thanh menu chọn chương ở bên trái màn hình (Sidebar)
 chuong_da_chon = st.sidebar.selectbox(
     "📚 Chọn Chương Ôn Tập:",
-    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Câu hỏi hỗn hợp", "Đề 1","Đề 2", "Đề 3", "Đề 4", "Đề 5", "Đề 6"]
+    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Chương 8.1: Thanh toán quốc tế" "Câu hỏi hỗn hợp", "Đề 1","Đề 2", "Đề 3", "Đề 4", "Đề 5", "Đề 6"]
 )
 # Hiển thị số lượt truy cập nhỏ ở góc dưới sidebar để bạn theo dõi
 st.sidebar.write(f"📊 **Tổng số lượt truy cập:** {tong_luot}")
@@ -2530,7 +2530,128 @@ elif chuong_da_chon == "Đề 3":
             "D.Bắc Băng Dương và Thái Bình Dương"
         ],
         "dap_an_dung": "A"
+    }
+    ]
+elif chuong_da_chon == "Chương 8.1: Thanh toán quốc tế":
+    cac_cau_hoi =[  
+         {
+        "cau_hoi": "Thị trường ngoại hối kỳ hạn là gì?",
+        "goi_y": [
+            "A.Thị trường phái sinh, trao đổi ngoại tệ trong tương lai",
+            "B.Thị trường có hợp đồng chống rủi ro tỷ giá ngoại tệ",
+            "C.Thị trường ký hợp đồng tỷ giá xác định ngay nhưng chuyển giao ngoại tệ sau một kỳ hạn",
+            "D.Thị trường ký hợp đồng xác định hai tỷ giá cho hai thời điểm hiện tại và kỳ hạn xác định trong hợp đồng"
+        ],
+        "dap_an_dung": "C"
     },
+
+    {
+        "cau_hoi": "Căn cứ chức năng hoạt động, người ta chia các thành viên thị trường ngoại hối thành những nhóm nào?",
+        "goi_y": [
+            "A.Các ngân hàng và các doanh nghiệp",
+            "B.Các nhà kinh doanh, môi giới, ngân hàng thương mại, ngân hàng trung ương",
+            "C.Các nhà kinh doanh tiền tệ, môi giới, đầu cơ, các nhà kinh doanh acbit",
+            "D.Các nhà kinh doanh, các ngân hàng thương mại, ngân hàng trung ương và môi giới"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Căn cứ hình thức tổ chức, người ta chia thị trường ngoại hối thành những thị trường nào?",
+        "goi_y": [
+            "A.Thị trường tiền mặt và thị trường chuyển khoản",
+            "B.Thị trường hoán đổi và thị trường quyền chọn",
+            "C.Thị trường có tổ chức và thị trường không tổ chức",
+            "D.Thị trường giao ngay và thị trường giao sau"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Căn cứ nghiệp vụ kinh doanh, người ta chia thị trường ngoại hối thành các thị trường nào?",
+        "goi_y": [
+            "A.Có tổ chức và không tổ chức",
+            "B.Tiền mặt, giao ngay, cơ bản, phái sinh",
+            "C.Tiền mặt, giao ngay, kỳ hạn, giao sau, hoán đổi, quyền chọn",
+            "D.Giao ngay, giao sau, hoán đổi, quyền chọn, cơ bản, phái sinh"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Ngoại hối là gì?",
+        "goi_y": [
+            "A.Là ngoại tệ (tiền nước ngoài)",
+            "B.Là ngoại tệ và nội tệ có thể thanh toán chuyển đổi với nhau",
+            "C.Là ngoại tệ mạnh và vàng",
+            "D.Là ngoại tệ, vàng và các công cụ thanh toán bằng ngoại tệ"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Thị trường nào được coi là trung tâm của thị trường ngoại hối?",
+        "goi_y": [
+            "A.Thị trường chứng khoán, nơi mua bán chứng khoán bằng ngoại tệ",
+            "B.Thị trường tiền tệ London (Anh)",
+            "C.Nơi giao dịch giữa các ngân hàng thương mại và các công ty xuất nhập khẩu có ngoại tệ",
+            "D.Thị trường ngoại tệ liên ngân hàng"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Tính chất nào của thị trường ngoại hối thể hiện phạm vi và tầm cỡ của nó?",
+        "goi_y": [
+            "A.Tính chất không nhất thiết phải tập trung",
+            "B.Tính chất hoạt động rộng lớn của các ngân hàng thương mại",
+            "C.Tính chất quốc tế và hoạt động liên tục 24/24",
+            "D.Tính chất và bản chất chức năng của các đồng tiền"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Chức năng nào của thị trường ngoại hối đem lại lợi ích trực tiếp cho các doanh nghiệp?",
+        "goi_y": [
+            "A.Phục vụ luân chuyển các khoản đầu tư quốc tế",
+            "B.Đáp ứng việc mua bán ngoại tệ phục vụ thanh toán quốc tế",
+            "C.Cung cấp công cụ bảo hiểm rủi ro tỷ giá cho các khoản thu chi ngoại tệ do xuất nhập khẩu",
+            "D.Xác định giá trị đồng tiền trong nước"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Các doanh nghiệp tham gia thị trường kỳ hạn nhằm mục đích gì?",
+        "goi_y": [
+            "A.Kiếm lợi nhuận từ chênh lệch tỷ giá",
+            "B.Thực hiện chính sách tiền tệ quốc gia",
+            "C.Bảo hiểm rủi ro tỷ giá và hạn chế ảnh hưởng của biến động tỷ giá",
+            "D.Mua bán ngoại tệ phục vụ thanh toán xuất nhập khẩu"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+    "cau_hoi": "Qua các mặt biểu hiện nào thì biết được sức mua của tiền tệ biến động?",
+    "goi_y": [
+        "A.Lãi suất cho vay tăng lên hay giảm xuống",
+        "B.Giá vàng",
+        "C.Giá ngoại hối",
+        "D.Tất cả đáp án trên"
+    ],
+    "dap_an_dung": "D"
+},
+{
+    "cau_hoi": "Những loại nào được coi là ngoại hối ở nước ta?",
+    "goi_y": [
+        "A.Séc do ngân hàng Việt Nam phát hành bằng ngoại tệ",
+        "B.Hối phiếu ghi bằng USD",
+        "C.Công trái quốc gia ghi bằng VND",
+        "D.Tất cả các đáp án trên"
+    ],
+    "dap_an_dung": "D"
+}
     ]
 # 3. Phần hiển thị và chấm điểm (Giữ nguyên cho tất cả các chương)
 st.header(f"📝 {chuong_da_chon}")
