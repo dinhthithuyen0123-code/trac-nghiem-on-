@@ -31,7 +31,7 @@ st.title("Ôn Luyện Trắc Nghiệm Giao Nhận")
 # 2. Tạo thanh menu chọn chương ở bên trái màn hình (Sidebar)
 chuong_da_chon = st.sidebar.selectbox(
     "📚 Chọn Chương Ôn Tập:",
-    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Chương 8.1: Thanh toán quốc tế" "Câu hỏi hỗn hợp", "Đề 1","Đề 2", "Đề 3", "Đề 4", "Đề 5", "Đề 6"]
+    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Chương 8.1: Thanh toán quốc tế", "Câu hỏi hỗn hợp", "Đề 1","Đề 2", "Đề 3", "Đề 4", "Đề 5", "Đề 6"]
 )
 # Hiển thị số lượt truy cập nhỏ ở góc dưới sidebar để bạn theo dõi
 st.sidebar.write(f"📊 **Tổng số lượt truy cập:** {tong_luot}")
