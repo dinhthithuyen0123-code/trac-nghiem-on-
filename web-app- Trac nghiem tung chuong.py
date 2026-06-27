@@ -2653,6 +2653,248 @@ elif chuong_da_chon == "Chương 8.1: Thanh toán quốc tế":
     "dap_an_dung": "D"
 }
     ]
+elif chuong_da_chon == "Đề 4":
+    cac_cau_hoi =[  
+       {
+        "cau_hoi": "Kênh đào Suez kết nối giữa những vùng biển nào sau đây?",
+        "goi_y": [
+            "A.Giữa Địa Trung Hải và Biển Đỏ",
+            "B.Giữa Địa Trung Hải và Biển Đen",
+            "C.Giữa Biển Baltic và Địa Trung Hải",
+            "D.Giữa Biển Caspi và Địa Trung Hải"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Số hiệu container được các hãng tàu in trên vỏ bên ngoài container có ký hiệu gì?",
+        "goi_y": [
+            "A.4 chữ cái viết hoa và 7 con số",
+            "B.4 chữ cái viết hoa và 6 con số",
+            "C.5 chữ cái viết hoa và 6 con số",
+            "D.5 chữ cái viết hoa và 7 con số"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Để nhận hàng tại cảng đích, người nhận hàng có tên trên vận tải đơn cần có chứng từ gì do hãng tàu hoặc người vận chuyển đường biển phát hành?",
+        "goi_y": [
+            "A.Lệnh giao hàng (D/O)",
+            "B.Thông báo hàng đến",
+            "C.Hóa đơn cước phí vận chuyển",
+            "D.Bản sao vận tải đơn"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Nếu một chiếc tàu biển của chủ tàu Việt Nam đăng ký và treo cờ Panama thì việc treo cờ đó được xem là gì?",
+        "goi_y": [
+            "A.Treo cờ thuận tiện (Flag of Convenience)",
+            "B.Treo cờ quốc tế",
+            "C.Treo cờ bình thường",
+            "D.Treo cờ tín hiệu"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Người nhận hàng cần làm thủ tục cược (mượn) container với hãng tàu trong trường hợp nào?",
+        "goi_y": [
+            "A.Nhận hàng FCL giao thẳng",
+            "B.Nhận hàng FCL rút ruột tại bãi cảng",
+            "C.Nhận hàng LCL",
+            "D.Nhận hàng FCL rút ruột tại bãi và nhận hàng LCL"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Đối với hàng hóa cồng kềnh, cước phí vận chuyển thường được tính dựa vào yếu tố nào?",
+        "goi_y": [
+            "A.Thể tích",
+            "B.Trọng lượng",
+            "C.Giá trị",
+            "D.Thỏa thuận giữa người gửi hàng và người chuyên chở"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Chọn câu SAI về vận đơn hàng không (AWB).",
+        "goi_y": [
+            "A.AWB là chứng từ có thể ký hậu được",
+            "B.AWB là giấy chứng nhận bảo hiểm",
+            "C.AWB là chứng từ khai hải quan",
+            "D.AWB là chứng từ không thể ký hậu được"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Các khu vực thuộc cảng hàng không gồm những khu vực nào?",
+        "goi_y": [
+            "A.Khu vực phục vụ máy bay, khu vực quản lý hành chính và trạm giao nhận hàng hóa xuất nhập khẩu",
+            "B.Khu vực phục vụ máy bay và trạm giao nhận hàng hóa xuất nhập khẩu",
+            "C.Trạm giao nhận hàng hóa xuất nhập khẩu và khu vực quản lý hành chính",
+            "D.Khu vực quản lý hành chính và khu vực phục vụ máy bay"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Thiết bị được coi là thiết bị xếp hàng theo đơn vị (ULD) trong vận tải hàng không là gì?",
+        "goi_y": [
+            "A.Igloo và Pallet",
+            "B.Pallet và Igloo",
+            "C.Igloo và Container",
+            "D.Container và Pallet"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Theo Công ước Warsaw 1929, hàng hóa thuộc trách nhiệm của người chuyên chở hàng không trong giai đoạn nào?",
+        "goi_y": [
+            "A.Hàng hóa nằm trong máy bay, trường hợp hạ cánh ngoài cảng hàng không hợp lý và trong quá trình vận chuyển đường bộ, đường biển, đường sông để thực hiện hợp đồng vận tải hàng không",
+            "B.Chỉ khi hàng hóa nằm trong máy bay hoặc hạ cánh ngoài cảng hàng không hợp lý",
+            "C.Chỉ khi vận chuyển bằng đường bộ, đường biển hoặc đường sông để thực hiện hợp đồng vận tải hàng không",
+            "D.Chỉ khi hàng hóa nằm trong máy bay"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Theo Công ước Warsaw 1929, giới hạn trách nhiệm của người chuyên chở đối với hàng hóa bị tổn thất là bao nhiêu?",
+        "goi_y": [
+            "A.250 Franc vàng/kg",
+            "B.300 Franc vàng/kg",
+            "C.10000 Franc vàng/kg",
+            "D.20000 Franc vàng/kg"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Trong vận tải hàng không, khi gửi hàng lẻ qua đại lý gom hàng, tại cảng đến người nhận hàng sẽ xuất trình loại vận đơn nào?",
+        "goi_y": [
+            "A.Vận đơn thứ cấp (HAWB)",
+            "B.Vận đơn chủ (MAWB)",
+            "C.Vận đơn theo lệnh",
+            "D.Cả MAWB và HAWB"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Vận đơn hàng không (AWB) là gì?",
+        "goi_y": [
+            "A.Chứng từ sở hữu hàng hóa",
+            "B.Bằng chứng của hợp đồng vận tải và xác nhận người chuyên chở đã nhận hàng",
+            "C.Chứng từ dùng để nhận hàng ở cảng đến",
+            "D.Chứng từ sở hữu hàng hóa và dùng để nhận hàng"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Vận chuyển hàng từ TP.HCM đến Dubai bằng đường biển rồi từ Dubai đến Frankfurt bằng đường hàng không là mô hình vận tải đa phương thức nào?",
+        "goi_y": [
+            "A.Sea-Air",
+            "B.Sea-Road-Air",
+            "C.Land Bridge",
+            "D.Sea-Air-Road"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Trong vận tải hàng hóa bằng đường hàng không, thời hạn trách nhiệm của người chuyên chở được tính từ khi nào?",
+        "goi_y": [
+            "A.Hàng hóa được hãng hàng không nhận để chở tại sân bay",
+            "B.Hàng hóa được xếp lên máy bay",
+            "C.Hàng hóa được nhận để chở tại một địa điểm bất kỳ",
+            "D.Hãng hàng không thông báo chấp nhận việc chuyên chở"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Ba bản gốc AWB được phân phối như thế nào?",
+        "goi_y": [
+            "A.Bản thứ nhất giao cho người gửi hàng, bản thứ hai giao cho người nhận hàng, bản thứ ba giao cho người chuyên chở",
+            "B.Bản thứ nhất giao cho người chuyên chở, bản thứ hai và thứ ba giao cho người nhận hàng",
+            "C.Bản thứ nhất giao cho người chuyên chở, bản thứ hai giao cho người nhận hàng, bản thứ ba giao cho người gửi hàng",
+            "D.Bản thứ nhất giao cho người chuyên chở, bản thứ hai và thứ ba giao cho người gửi hàng"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Vận đơn hàng không (AWB) có thể được lập bởi ai?",
+        "goi_y": [
+            "A.Người chuyên chở hàng không, hãng hàng không và người gom hàng",
+            "B.Người chuyên chở hàng không và hãng hàng không",
+            "C.Hãng hàng không và người gom hàng",
+            "D.Người gom hàng và người chuyên chở hàng không"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Trong vận chuyển hàng không, cước hàng bách hóa thông thường (GCR-N) được áp dụng đối với lô hàng có khối lượng bao nhiêu?",
+        "goi_y": [
+            "A.Từ 45 kg trở xuống",
+            "B.Từ 40 kg trở xuống",
+            "C.Từ 50 kg trở xuống",
+            "D.Từ 55 kg trở xuống"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Trọng lượng cả bì (Gross Weight) được dùng để tính cước trong trường hợp hàng hóa là:",
+        "goi_y": [
+            "A.Hàng nặng",
+            "B.Hàng nhẹ",
+            "C.Hàng cồng kềnh",
+            "D.Hàng nhẹ và hàng cồng kềnh"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Theo Công ước hàng không, tổn thất do lỗi của người chuyên chở, người phục vụ hoặc đại lý của họ sẽ không được miễn trách theo quy định của văn bản nào?",
+        "goi_y": [
+            "A.Nghị định thư Montreal 1975",
+            "B.Công ước Warsaw 1929",
+            "C.Nghị định thư Hague 1955",
+            "D.Công ước Guadalajara 1961"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Nếu giá trị hàng hóa được kê khai trên AWB thì người chuyên chở sẽ bồi thường theo nguyên tắc nào?",
+        "goi_y": [
+            "A.Giá trị đã kê khai",
+            "B.Giới hạn trách nhiệm theo công ước điều chỉnh",
+            "C.Theo thỏa thuận khi xảy ra tổn thất",
+            "D.Giá trị đã kê khai nhưng phải được người chuyên chở chấp nhận"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Theo thông lệ quốc tế, hàng nhẹ là hàng có mật độ hàng hóa:",
+        "goi_y": [
+            "A.Nhỏ hơn 6000 cm³/kg",
+            "B.Nhỏ hơn 5000 cm³/kg",
+            "C.Nhỏ hơn 5500 cm³/kg",
+            "D.Nhỏ hơn 6500 cm³/kg"
+        ],
+        "dap_an_dung": "A"
+    }
+    ]
 # 3. Phần hiển thị và chấm điểm (Giữ nguyên cho tất cả các chương)
 st.header(f"📝 {chuong_da_chon}")
 st.write("Hãy hoàn thành các câu hỏi trắc nghiệm dưới đây:")
