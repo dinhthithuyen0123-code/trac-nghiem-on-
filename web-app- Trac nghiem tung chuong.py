@@ -1,5 +1,10 @@
 import streamlit as st
 import os
+st.set_page_config(
+    page_title="Trắc Nghiệm Giao Nhận Hàng Hóa & Vận Tải Biển - Ôn Thi Logistics",
+    page_icon="🎯",
+    layout="centered"
+)
 # 1. Hàm tự động đếm và lưu lượt truy cập vào file text
 def dem_luot_truy_cap():
     file_name = "luot_truy_cap.txt"
@@ -28,10 +33,15 @@ else:
         tong_luot = 1
 # --- BẮT ĐẦU GIAO DIỆN WEB ---
 st.title("Ôn Luyện Trắc Nghiệm Giao Nhận")
+st.write("""
+Chào mừng bạn đến với hệ thống **ôn thi trắc nghiệm logistics** trực tuyến. 
+Tại đây tổng hợp các câu hỏi bài tập về **giao nhận hàng hóa quốc tế**, **vận tải đường biển**, 
+quy trình xuất nhập khẩu và các nghiệp vụ cảng biển mới nhất giúp bạn ôn tập hiệu quả.
+""")
 # 2. Tạo thanh menu chọn chương ở bên trái màn hình (Sidebar)
 chuong_da_chon = st.sidebar.selectbox(
     "📚 Chọn Chương Ôn Tập:",
-    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Chương 8.1: Thanh toán quốc tế", "Câu hỏi hỗn hợp", "Đề 1","Đề 2", "Đề 3", "Đề 4", "Đề 5", "Đề 6"]
+    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Chương 8.1: Thanh toán quốc tế", "Chương 8.2: Thanh toán quốc tế", "Câu hỏi hỗn hợp", "Đề 1","Đề 2", "Đề 3", "Đề 4", "Đề 5", "Đề 6"]
 )
 # Hiển thị số lượt truy cập nhỏ ở góc dưới sidebar để bạn theo dõi
 st.sidebar.write(f"📊 **Tổng số lượt truy cập:** {tong_luot}")
@@ -3342,6 +3352,390 @@ elif chuong_da_chon == "Đề 4":
             "D.Nhỏ hơn 6500 cm³/kg"
         ],
         "dap_an_dung": "A"
+    }
+    ]
+elif chuong_da_chon == "Đề 4":
+    cac_cau_hoi =[  
+      {
+        "cau_hoi": "Các điều kiện chủ yếu trong thanh toán quốc tế gồm:",
+        "goi_y": [
+            "A.Điều kiện về tiền tệ",
+            "B.Điều kiện về địa điểm thanh toán",
+            "C.Điều kiện về thời gian thanh toán",
+            "D.Tất cả các đáp án trên"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Điều kiện nào quy định đồng tiền được sử dụng để ghi giá hàng hóa?",
+        "goi_y": [
+            "A.Đồng tiền thanh toán",
+            "B.Đồng tiền tính toán",
+            "C.Đồng tiền dự trữ",
+            "D.Đồng tiền chuyển đổi"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Đồng tiền thanh toán là:",
+        "goi_y": [
+            "A.Đồng tiền dùng để tính giá hàng hóa",
+            "B.Đồng tiền dùng để thanh toán giá trị hợp đồng",
+            "C.Đồng tiền của nước xuất khẩu",
+            "D.Đồng tiền của nước nhập khẩu"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Đồng tiền tính toán (Accounting Currency) được dùng để:",
+        "goi_y": [
+            "A.Trả nợ",
+            "B.Thanh toán qua ngân hàng",
+            "C.Biểu hiện giá cả hàng hóa và tính tổng giá trị hợp đồng",
+            "D.Mở L/C"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Đồng tiền thanh toán (Payment Currency) được dùng để:",
+        "goi_y": [
+            "A.Ghi giá hàng hóa",
+            "B.Thanh toán công nợ và giá trị hợp đồng",
+            "C.Xác định thuế",
+            "D.Tính lãi vay"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Công cụ nào sau đây dùng để phòng ngừa rủi ro tỷ giá?",
+        "goi_y": [
+            "A.Hợp đồng kỳ hạn",
+            "B.Hợp đồng hoán đổi",
+            "C.Hợp đồng tương lai",
+            "D.Tất cả các đáp án trên"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Công cụ nào không được nêu trong slide để bảo đảm rủi ro tỷ giá?",
+        "goi_y": [
+            "A.Forward",
+            "B.Futures",
+            "C.Swap",
+            "D.Cheque"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Hợp đồng quyền chọn (Option) được sử dụng chủ yếu nhằm:",
+        "goi_y": [
+            "A.Phòng ngừa rủi ro tỷ giá",
+            "B.Tăng thuế",
+            "C.Tăng phí ngân hàng",
+            "D.Mở tài khoản"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Địa điểm thanh toán là:",
+        "goi_y": [
+            "A.Nơi giao hàng",
+            "B.Nơi người bán nhận tiền và người mua trả tiền",
+            "C.Nơi mở L/C",
+            "D.Nơi làm thủ tục hải quan"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Địa điểm thanh toán phụ thuộc vào:",
+        "goi_y": [
+            "A.Tương quan lực lượng giữa hai bên",
+            "B.Phương thức thanh toán",
+            "C.Đồng tiền thanh toán",
+            "D.Tất cả các đáp án trên"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Yếu tố nào sau đây không ảnh hưởng đến địa điểm thanh toán?",
+        "goi_y": [
+            "A.Phương thức thanh toán",
+            "B.Đồng tiền thanh toán",
+            "C.Quan hệ giữa hai bên",
+            "D.Trọng lượng hàng hóa"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Điều kiện thời gian thanh toán gồm:",
+        "goi_y": [
+            "A.Trả trước",
+            "B.Trả ngay",
+            "C.Trả sau",
+            "D.Tất cả các đáp án trên"
+        ],
+        "dap_an_dung": "D"
+    },
+     {
+        "cau_hoi": "Phương thức thanh toán kết hợp trả trước và trả sau gọi là:",
+        "goi_y": [
+            "A.Deferred Payment",
+            "B.Combined Payment",
+            "C.At Sight",
+            "D.Spot Payment"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Trong phương thức trả tiền trước:",
+        "goi_y": [
+            "A.Người bán giao hàng trước",
+            "B.Người mua thanh toán trước khi giao hàng",
+            "C.Người mua nhận hàng trước",
+            "D.Thanh toán sau khi nhận hàng"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Trong trả tiền trước, người hưởng lợi nhiều nhất là:",
+        "goi_y": [
+            "A.Người mua",
+            "B.Người bán",
+            "C.Ngân hàng",
+            "D.Hãng tàu"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Trong trả tiền trước, rủi ro lớn nhất thuộc về:",
+        "goi_y": [
+            "A.Người bán",
+            "B.Người mua",
+            "C.Ngân hàng",
+            "D.Hải quan"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Thời điểm thanh toán trong phương thức trả trước là:",
+        "goi_y": [
+            "A.Sau khi giao hàng",
+            "B.Trước khi chuyển giao hàng hóa",
+            "C.Sau khi nhận hàng",
+            "D.Sau khi kiểm hóa"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Thời điểm giao hàng trong phương thức trả trước là:",
+        "goi_y": [
+            "A.Trước khi thanh toán",
+            "B.Sau khi người mua thanh toán",
+            "C.Đồng thời với thanh toán",
+            "D.Không xác định"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Trả tiền trước thường áp dụng khi:",
+        "goi_y": [
+            "A.Người bán chưa tin tưởng người mua",
+            "B.Hai bên hợp tác lâu năm",
+            "C.Giá trị hợp đồng nhỏ",
+            "D.Không có ngân hàng"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Thanh toán trả ngay là:",
+        "goi_y": [
+            "A.Thanh toán trước khi ký hợp đồng",
+            "B.Thanh toán ngay khi đến thời điểm quy định",
+            "C.Thanh toán sau 6 tháng",
+            "D.Thanh toán trả góp"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Theo bài học, thanh toán trả ngay có thể diễn ra khi:",
+        "goi_y": [
+            "A.Người bán đặt hàng hóa dưới quyền định đoạt của người mua",
+            "B.Người bán xuất trình bộ chứng từ",
+            "C.Người mua nhận hàng",
+            "D.Tất cả các đáp án trên"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Trong trả tiền sau:",
+        "goi_y": [
+            "A.Người mua thanh toán trước",
+            "B.Người bán giao hàng trước, thu tiền sau",
+            "C.Thanh toán ngay",
+            "D.Không giao hàng"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Trong trả tiền sau, người chịu rủi ro lớn nhất là:",
+        "goi_y": [
+            "A.Người bán",
+            "B.Người mua",
+            "C.Ngân hàng",
+            "D.Hãng tàu"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Trong trả tiền sau, người mua:",
+        "goi_y": [
+            "A.Không có rủi ro đáng kể",
+            "B.Chịu toàn bộ rủi ro",
+            "C.Phải trả tiền trước",
+            "D.Không nhận hàng"
+        ],
+        "dap_an_dung": "A"
+    },
+     {
+        "cau_hoi": "Thời điểm giao hàng trong phương thức trả tiền sau là:",
+        "goi_y": [
+            "A.Sau khi thanh toán",
+            "B.Trước khi người mua thanh toán",
+            "C.Sau khi mở L/C",
+            "D.Không xác định"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Trả tiền sau thường áp dụng khi:",
+        "goi_y": [
+            "A.Người bán chưa biết người mua",
+            "B.Người bán tin tưởng người mua",
+            "C.Người mua chưa có giấy phép nhập khẩu",
+            "D.Hàng hóa bị cấm xuất khẩu"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Phương thức thanh toán quốc tế là:",
+        "goi_y": [
+            "A.Quá trình người mua trả tiền và người bán nhận tiền thông qua hệ thống ngân hàng",
+            "B.Quá trình vận chuyển hàng hóa",
+            "C.Quá trình khai báo hải quan",
+            "D.Quá trình mua bảo hiểm"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Ngân hàng trong thanh toán quốc tế có vai trò:",
+        "goi_y": [
+            "A.Vận chuyển hàng",
+            "B.Trung gian thực hiện việc chuyển tiền",
+            "C.Kiểm tra chất lượng hàng hóa",
+            "D.Đóng gói hàng hóa"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Điểm khác nhau lớn nhất giữa trả tiền trước và trả tiền sau là:",
+        "goi_y": [
+            "A.Người bán giao hàng trước hay sau khi nhận tiền",
+            "B.Đồng tiền thanh toán",
+            "C.Địa điểm thanh toán",
+            "D.Loại hàng hóa"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "So sánh rủi ro giữa trả tiền trước và trả tiền sau:",
+        "goi_y": [
+            "A.Trả trước: người bán rủi ro; Trả sau: người mua rủi ro",
+            "B.Trả trước: người mua rủi ro; Trả sau: người bán rủi ro",
+            "C.Cả hai đều người mua rủi ro",
+            "D.Cả hai đều người bán rủi ro"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Doanh nghiệp Việt Nam lần đầu nhập khẩu từ một nhà cung cấp mới. Người bán yêu cầu thanh toán trước 100% giá trị hợp đồng. Mục đích chính của yêu cầu này là:",
+        "goi_y": [
+            "A.Giảm rủi ro cho người bán",
+            "B.Giảm rủi ro cho người mua",
+            "C.Giảm thuế nhập khẩu",
+            "D.Giảm phí vận tải"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Doanh nghiệp xuất khẩu giao hàng trước và cho phép khách hàng thanh toán sau 60 ngày. Đây là:",
+        "goi_y": [
+            "A.Advance Payment",
+            "B.At Sight Payment",
+            "C.Deferred Payment",
+            "D.Combined Payment"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Một hợp đồng quy định thanh toán 30% trước khi giao hàng và 70% sau khi nhận hàng. Đây là:",
+        "goi_y": [
+            "A.Trả trước",
+            "B.Trả sau",
+            "C.Thanh toán hỗn hợp (Combined Payment)",
+            "D.Thanh toán giao ngay"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Nếu doanh nghiệp muốn hạn chế rủi ro do biến động tỷ giá khi thanh toán sau 3 tháng thì nên sử dụng công cụ nào?",
+        "goi_y": [
+            "A.Hợp đồng kỳ hạn (Forward)",
+            "B.Hợp đồng hoán đổi (Swap)",
+            "C.Hợp đồng tương lai (Futures)",
+            "D.Bất kỳ công cụ phòng ngừa rủi ro tỷ giá nào phù hợp"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+    "cau_hoi": "Thời điểm giao hàng trong phương thức trả tiền sau là:",
+    "goi_y": [
+        "A.Sau khi thanh toán",
+        "B.Trước khi người mua thanh toán",
+        "C.Sau khi mở L/C",
+        "D.Không xác định"
+        ],
+        "dap_an_dung": "B"
     }
     ]
 # 3. Phần hiển thị và chấm điểm (Giữ nguyên cho tất cả các chương)
