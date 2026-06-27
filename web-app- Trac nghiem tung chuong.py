@@ -2651,7 +2651,456 @@ elif chuong_da_chon == "Chương 8.1: Thanh toán quốc tế":
         "D.Tất cả các đáp án trên"
     ],
     "dap_an_dung": "D"
-}
+},
+ {
+        "cau_hoi": "Ngoại hối bao gồm những gì?",
+        "goi_y": [
+            "A.Chỉ ngoại tệ",
+            "B.Ngoại tệ và vàng",
+            "C.Ngoại tệ, vàng tiêu chuẩn quốc tế, giấy tờ có giá và các công cụ thanh toán bằng ngoại tệ",
+            "D.Chỉ vàng tiêu chuẩn quốc tế"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Theo nghĩa hẹp, thị trường ngoại hối là gì?",
+        "goi_y": [
+            "A.Thị trường mua bán chứng khoán",
+            "B.Thị trường giao dịch vàng",
+            "C.Thị trường thực hiện các giao dịch mua bán, trao đổi ngoại tệ",
+            "D.Thị trường vốn"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Sự ra đời và phát triển của thị trường ngoại hối gắn liền với sự phát triển của lĩnh vực nào?",
+        "goi_y": [
+            "A.Công nghiệp",
+            "B.Ngoại thương",
+            "C.Nông nghiệp",
+            "D.Ngân sách Nhà nước"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Theo hình thức tổ chức, thị trường ngoại hối được chia thành những loại nào?",
+        "goi_y": [
+            "A.Thị trường giao ngay và kỳ hạn",
+            "B.Thị trường có tổ chức và không có tổ chức",
+            "C.Thị trường tương lai và quyền chọn",
+            "D.Thị trường hoán đổi và giao ngay"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Theo nghiệp vụ kinh doanh, thị trường ngoại hối KHÔNG bao gồm thị trường nào?",
+        "goi_y": [
+            "A.Spot Market",
+            "B.Forward Market",
+            "C.Futures Market",
+            "D.Money Market"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Thị trường giao ngay (Spot Market) là gì?",
+        "goi_y": [
+            "A.Thanh toán sau nhiều tháng",
+            "B.Giao dịch mua bán ngoại tệ theo tỷ giá hiện tại và thanh toán trong vòng hai ngày làm việc",
+            "C.Thanh toán sau một năm",
+            "D.Chỉ dùng để đầu cơ"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Thời gian thanh toán của giao dịch Spot thường là:",
+        "goi_y": [
+            "A.Ngay lập tức",
+            "B.Sau một ngày",
+            "C.Trong vòng hai ngày làm việc kể từ ngày giao dịch",
+            "D.Sau ba mươi ngày"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Nhược điểm lớn nhất của thị trường giao ngay là gì?",
+        "goi_y": [
+            "A.Chi phí cao",
+            "B.Không đáp ứng nhu cầu mua bán ngoại tệ trong tương lai",
+            "C.Không có tỷ giá",
+            "D.Không có ngân hàng tham gia"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Giao dịch kỳ hạn (Forward) là giao dịch như thế nào?",
+        "goi_y": [
+            "A.Thanh toán ngay",
+            "B.Cam kết mua bán ngoại tệ theo tỷ giá xác định trước và thanh toán trong tương lai",
+            "C.Chỉ mua vàng",
+            "D.Chỉ dành cho ngân hàng"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Mục đích quan trọng nhất của hợp đồng Forward là gì?",
+        "goi_y": [
+            "A.Đầu cơ giá vàng",
+            "B.Phòng ngừa rủi ro hối đoái",
+            "C.Đầu tư chứng khoán",
+            "D.Huy động vốn"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Thị trường Futures khác thị trường Forward ở điểm nào?",
+        "goi_y": [
+            "A.Futures được chuẩn hóa và giao dịch trên sở giao dịch",
+            "B.Futures thanh toán ngay",
+            "C.Futures không có hợp đồng",
+            "D.Futures chỉ giao dịch vàng"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Hợp đồng Futures được thực hiện trên thị trường nào?",
+        "goi_y": [
+            "A.Thị trường OTC",
+            "B.Sở giao dịch quốc tế (IMM)",
+            "C.Ngân hàng Nhà nước",
+            "D.Thị trường chứng khoán"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Lý do sử dụng hợp đồng Futures là gì?",
+        "goi_y": [
+            "A.Chỉ để đầu cơ",
+            "B.Phòng ngừa rủi ro tỷ giá và tìm kiếm cơ hội kinh doanh",
+            "C.Chỉ để thanh toán",
+            "D.Chỉ dành cho doanh nghiệp xuất khẩu"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Hoán đổi tiền tệ (Swap) là gì?",
+        "goi_y": [
+            "A.Mua ngoại tệ giao ngay",
+            "B.Bán ngoại tệ kỳ hạn",
+            "C.Kết hợp đồng thời một giao dịch mua và một giao dịch bán cùng một lượng ngoại tệ với hai thời điểm thanh toán khác nhau",
+            "D.Mua vàng bằng ngoại tệ"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Lợi ích chính của giao dịch Swap là gì?",
+        "goi_y": [
+            "A.Tăng lợi nhuận từ lãi suất",
+            "B.Phòng ngừa rủi ro hối đoái và giảm chi phí",
+            "C.Mua bán cổ phiếu",
+            "D.Tăng vốn điều lệ"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Trong các thị trường sau, thị trường nào có thời gian thanh toán sớm nhất?",
+        "goi_y": [
+            "A.Forward",
+            "B.Futures",
+            "C.Spot",
+            "D.Options"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Điểm giống nhau giữa Forward và Futures là gì?",
+        "goi_y": [
+            "A.Đều thanh toán ngay",
+            "B.Đều là hợp đồng mua bán ngoại tệ thực hiện trong tương lai",
+            "C.Đều giao dịch trên sở giao dịch",
+            "D.Đều không có rủi ro"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Điểm khác biệt lớn nhất giữa Forward và Futures là gì?",
+        "goi_y": [
+            "A.Forward có thanh toán, Futures không",
+            "B.Futures được chuẩn hóa và giao dịch trên sở giao dịch, còn Forward là hợp đồng thỏa thuận riêng",
+            "C.Forward chỉ dùng cho ngân hàng",
+            "D.Futures không có tỷ giá"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Theo bài học, thị trường ngoại hối được phân loại theo bao nhiêu tiêu chí?",
+        "goi_y": [
+            "A.Hai",
+            "B.Ba",
+            "C.Bốn",
+            "D.Năm"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Theo nghiệp vụ kinh doanh, thị trường ngoại hối gồm những thị trường nào?",
+        "goi_y": [
+            "A.Spot, Forward, Swaps, Futures, Options",
+            "B.Spot, Chứng khoán, Trái phiếu",
+            "C.Forward, Cổ phiếu, Spot",
+            "D.Futures, Tiền gửi, Spot"
+        ],
+        "dap_an_dung": "A"
+    },
+      {
+        "cau_hoi": "Tỷ giá áp dụng trong Spot Market là:",
+        "goi_y": [
+            "A.Tỷ giá tương lai",
+            "B.Tỷ giá giao ngay",
+            "C.Tỷ giá dự kiến",
+            "D.Không xác định"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Thời gian thanh toán của Spot Market là:",
+        "goi_y": [
+            "A.Ngay lập tức",
+            "B.Trong vòng hai ngày làm việc",
+            "C.Sau 30 ngày",
+            "D.Sau 90 ngày"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Spot Market thích hợp nhất khi:",
+        "goi_y": [
+            "A.Doanh nghiệp cần ngoại tệ ngay",
+            "B.Doanh nghiệp cần ngoại tệ sau 6 tháng",
+            "C.Đầu tư dài hạn",
+            "D.Mua trái phiếu"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Nhược điểm của Spot Market là:",
+        "goi_y": [
+            "A.Không có tỷ giá",
+            "B.Không đáp ứng nhu cầu giao dịch trong tương lai",
+            "C.Không có ngân hàng tham gia",
+            "D.Không thanh toán được"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Forward Market là:",
+        "goi_y": [
+            "A.Mua bán ngoại tệ và thanh toán trong tương lai",
+            "B.Thanh toán ngay",
+            "C.Chỉ mua vàng",
+            "D.Chỉ mua chứng khoán"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Trong hợp đồng Forward, tỷ giá được:",
+        "goi_y": [
+            "A.Quyết định vào ngày thanh toán",
+            "B.Xác định trước khi ký hợp đồng",
+            "C.Thay đổi mỗi ngày",
+            "D.Không xác định"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Forward giúp doanh nghiệp:",
+        "goi_y": [
+            "A.Tăng lãi suất",
+            "B.Phòng ngừa rủi ro tỷ giá",
+            "C.Giảm thuế",
+            "D.Tăng doanh thu"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Thanh toán của hợp đồng Forward diễn ra:",
+        "goi_y": [
+            "A.Ngay lập tức",
+            "B.Trong tương lai",
+            "C.Sau hai ngày",
+            "D.Sau một ngày"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Futures Market là:",
+        "goi_y": [
+            "A.Hợp đồng mua bán ngoại tệ chuẩn hóa",
+            "B.Hợp đồng vay vốn",
+            "C.Hợp đồng mua cổ phiếu",
+            "D.Hợp đồng bảo hiểm"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Hợp đồng Futures được giao dịch tại:",
+        "goi_y": [
+            "A.Ngân hàng",
+            "B.Doanh nghiệp",
+            "C.Sở giao dịch",
+            "D.Hải quan"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Futures được giao dịch tại:",
+        "goi_y": [
+            "A.WTO",
+            "B.IMF",
+            "C.IMM",
+            "D.WB"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Mục đích của Futures là:",
+        "goi_y": [
+            "A.Chỉ đầu cơ",
+            "B.Chỉ thanh toán",
+            "C.Phòng ngừa rủi ro và tìm kiếm lợi nhuận",
+            "D.Chỉ dành cho ngân hàng"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Swap là:",
+        "goi_y": [
+            "A.Kết hợp đồng thời một giao dịch mua và một giao dịch bán cùng một lượng ngoại tệ với hai thời điểm thanh toán khác nhau",
+            "B.Hai giao dịch chứng khoán",
+            "C.Hai giao dịch vàng",
+            "D.Hai giao dịch trái phiếu"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Đặc điểm của Swap là:",
+        "goi_y": [
+            "A.Hai giao dịch có thời điểm thanh toán khác nhau",
+            "B.Hai giao dịch thanh toán cùng lúc",
+            "C.Không có tỷ giá",
+            "D.Không có ngoại tệ"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Mục đích của Swap là:",
+        "goi_y": [
+            "A.Đầu cơ vàng",
+            "B.Giảm chi phí và phòng ngừa rủi ro tỷ giá",
+            "C.Tăng lãi suất",
+            "D.Phát hành cổ phiếu"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Điểm khác nhau lớn nhất giữa Spot và Forward là:",
+        "goi_y": [
+            "A.Spot thanh toán trong vòng hai ngày làm việc (T+2), Forward thanh toán trong tương lai",
+            "B.Spot không có tỷ giá",
+            "C.Forward không có ngoại tệ",
+            "D.Spot không có hợp đồng"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Điểm khác nhau lớn nhất giữa Forward và Futures là:",
+        "goi_y": [
+            "A.Futures được chuẩn hóa và giao dịch trên sở giao dịch, còn Forward là hợp đồng thỏa thuận riêng",
+            "B.Futures không có hợp đồng",
+            "C.Forward thanh toán ngay",
+            "D.Futures không có tỷ giá"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Điểm giống nhau giữa Futures và Forward là:",
+        "goi_y": [
+            "A.Đều thanh toán ngay",
+            "B.Đều thực hiện giao dịch trong tương lai",
+            "C.Đều giao dịch OTC",
+            "D.Đều không có hợp đồng"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Nếu doanh nghiệp biết 3 tháng nữa phải thanh toán 100.000 USD thì nên sử dụng:",
+        "goi_y": [
+            "A.Spot",
+            "B.Forward",
+            "C.Tiền gửi tiết kiệm",
+            "D.Trái phiếu"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Nếu doanh nghiệp cần thanh toán USD ngay hôm nay thì nên sử dụng:",
+        "goi_y": [
+            "A.Futures",
+            "B.Forward",
+            "C.Spot",
+            "D.Options"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Một doanh nghiệp vừa mua USD giao ngay, vừa bán đúng số USD đó theo hợp đồng kỳ hạn nhằm hạn chế rủi ro tỷ giá. Đây là nghiệp vụ:",
+        "goi_y": [
+            "A.Spot",
+            "B.Forward",
+            "C.Swap",
+            "D.Futures"
+        ],
+        "dap_an_dung": "C"
+    }
     ]
 elif chuong_da_chon == "Đề 4":
     cac_cau_hoi =[  
