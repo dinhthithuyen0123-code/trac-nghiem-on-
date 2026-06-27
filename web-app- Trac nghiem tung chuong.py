@@ -41,7 +41,7 @@ quy trình xuất nhập khẩu và các nghiệp vụ cảng biển mới nhấ
 # 2. Tạo thanh menu chọn chương ở bên trái màn hình (Sidebar)
 chuong_da_chon = st.sidebar.selectbox(
     "📚 Chọn Chương Ôn Tập:",
-    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Chương 8.1: Thanh toán quốc tế", "Chương 8.2: Thanh toán quốc tế", "Chương 8.3: Thanh toán quốc tế", "Câu hỏi hỗn hợp", "Đề 1","Đề 2", "Đề 3", "Đề 4", "Đề 5", "Đề 6"]
+    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Chương 8.1: Thanh toán quốc tế", "Chương 8.2: Thanh toán quốc tế", "Chương 8.3: Thanh toán quốc tế", "Chương 8.4: Thanh toán quốc tế" "Câu hỏi hỗn hợp", "Đề 1","Đề 2", "Đề 3", "Đề 4", "Đề 5", "Đề 6"]
 )
 # Hiển thị số lượt truy cập nhỏ ở góc dưới sidebar để bạn theo dõi
 st.sidebar.write(f"📊 **Tổng số lượt truy cập:** {tong_luot}")
@@ -4133,6 +4133,401 @@ elif chuong_da_chon == "Chương 8.3: Thanh toán quốc tế":
         ],
         "dap_an_dung": "D"
     }
+    ]
+elif chuong_da_chon == "Chương 8.4: Thanh toán quốc tế":
+    cac_cau_hoi =[  
+      {
+    "cau_hoi": "Phương tiện thanh toán quốc tế không bao gồm:",
+    "goi_y": [
+        "A.Hối phiếu",
+        "B.Kỳ phiếu",
+        "C.Séc",
+        "D.Vận đơn"
+    ],
+    "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Hối phiếu là:",
+        "goi_y": [
+            "A.Cam kết trả tiền của người mua",
+            "B.Mệnh lệnh vô điều kiện do người ký phát lập, yêu cầu người bị ký phát thanh toán một số tiền nhất định",
+            "C.Chứng từ sở hữu hàng hóa",
+            "D.Giấy xác nhận đã thanh toán"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Trong giao dịch tín dụng thương mại, người ký phát hối phiếu thường là:",
+        "goi_y": [
+            "A.Ngân hàng",
+            "B.Người mua (Importer)",
+            "C.Người bán (Exporter)",
+            "D.Hãng tàu"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Đặc điểm nào dưới đây đúng với hối phiếu?",
+        "goi_y": [
+            "A.Là lời hứa trả tiền của người mua",
+            "B.Là mệnh lệnh thanh toán có điều kiện",
+            "C.Là mệnh lệnh thanh toán vô điều kiện",
+            "D.Không được chuyển nhượng"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Theo lịch sử phát triển của tín dụng thương mại, trình tự hình thành đúng là:",
+        "goi_y": [
+            "A.Hối phiếu → Kỳ phiếu → Luật hối phiếu",
+            "B.Kỳ phiếu → Hối phiếu → Luật hối phiếu",
+            "C.Luật hối phiếu → Kỳ phiếu → Hối phiếu",
+            "D.Kỳ phiếu → Luật hối phiếu → Hối phiếu"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Trong các nội dung bắt buộc của hối phiếu, tiêu đề 'Hối phiếu' được ghi nhằm mục đích:",
+        "goi_y": [
+            "A.Xác định số tiền thanh toán",
+            "B.Nhận biết chứng từ có phải là hối phiếu hay không",
+            "C.Xác định thời hạn thanh toán",
+            "D.Xác định người thụ hưởng"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Lệnh thanh toán ghi trên hối phiếu phải là:",
+        "goi_y": [
+            "A.Có điều kiện",
+            "B.Có điều kiện nếu hai bên thỏa thuận",
+            "C.Vô điều kiện",
+            "D.Có thể thay đổi sau khi phát hành"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Đối với hối phiếu At Sight, người bị ký phát phải thanh toán:",
+        "goi_y": [
+            "A.Sau 30 ngày",
+            "B.Sau 60 ngày",
+            "C.Ngay khi nhìn thấy hối phiếu",
+            "D.Theo ngày ghi trên hóa đơn"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Đâu không phải là cách quy định thời hạn của hối phiếu kỳ hạn (Usance Bill)?",
+        "goi_y": [
+            "A.X days after sight",
+            "B.X days after signed",
+            "C.X days B/L date",
+            "D.X days after Letter of Credit opening"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Theo bài giảng, hối phiếu là loại giấy tờ:",
+        "goi_y": [
+            "A.Không được chuyển nhượng",
+            "B.Chỉ dùng để thanh toán",
+            "C.Có giá, có thể chuyển nhượng, sử dụng trong tín dụng ngân hàng và cầm cố/thế chấp",
+            "D.Chỉ có giá trị trong nước"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+    "cau_hoi": "Nếu trên hối phiếu không quy định địa điểm thanh toán thì địa điểm thanh toán được xác định là:",
+    "goi_y": [
+        "A.Địa chỉ người ký phát",
+        "B.Địa chỉ người bị ký phát",
+        "C.Ngân hàng phát hành L/C",
+        "D.Địa chỉ người thụ hưởng"
+    ],
+    "dap_an_dung": "B"
+},
+
+{
+    "cau_hoi": "Trong thực tế, địa điểm thanh toán hối phiếu thường là:",
+    "goi_y": [
+        "A.Trụ sở người ký phát",
+        "B.Hãng tàu",
+        "C.Ngân hàng nơi người bị ký phát mở tài khoản giao dịch",
+        "D.Hải quan"
+    ],
+    "dap_an_dung": "C"
+},
+
+{
+    "cau_hoi": "Nếu người ký phát không chỉ định người thụ hưởng khác thì người thụ hưởng là:",
+    "goi_y": [
+        "A.Người bị ký phát",
+        "B.Ngân hàng",
+        "C.Chính người ký phát",
+        "D.Người vận chuyển"
+    ],
+    "dap_an_dung": "C"
+},
+
+{
+    "cau_hoi": "Cách ghi 'Pay to the order of Mr. Tran Tien Thua...' là hình thức:",
+    "goi_y": [
+        "A.Vô danh",
+        "B.Đích danh",
+        "C.Theo lệnh",
+        "D.Chuyển nhượng hạn chế"
+    ],
+    "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "'Pay to the bearer...' có nghĩa là:",
+        "goi_y": [
+            "A.Thanh toán theo lệnh",
+            "B.Thanh toán cho người cầm phiếu",
+            "C.Thanh toán cho ngân hàng",
+            "D.Thanh toán cho người ký phát"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Trong các nội dung bắt buộc của hối phiếu, yếu tố cuối cùng là:",
+        "goi_y": [
+            "A.Địa điểm thanh toán",
+            "B.Người thụ hưởng",
+            "C.Thời hạn thanh toán",
+            "D.Tên, địa chỉ và chữ ký của người ký phát"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Ngoài các nội dung bắt buộc, các thông tin bổ sung trên hối phiếu:",
+        "goi_y": [
+            "A.Là điều kiện bắt buộc để thanh toán",
+            "B.Chỉ mang tính tham khảo, không phải căn cứ từ chối thanh toán",
+            "C.Thay thế được các nội dung bắt buộc",
+            "D.Có giá trị pháp lý cao hơn"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Kỳ phiếu (Promissory Note) là:",
+        "goi_y": [
+            "A.Mệnh lệnh thanh toán vô điều kiện",
+            "B.Cam kết trả tiền vô điều kiện của người phát hành",
+            "C.Giấy chứng nhận sở hữu hàng hóa",
+            "D.Lệnh của ngân hàng"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Điểm khác biệt cơ bản giữa kỳ phiếu và hối phiếu là:",
+        "goi_y": [
+            "A.Kỳ phiếu là lời hứa trả tiền, còn hối phiếu là mệnh lệnh thanh toán",
+            "B.Kỳ phiếu do ngân hàng phát hành",
+            "C.Hối phiếu không dùng trong thương mại quốc tế",
+            "D.Hai chứng từ hoàn toàn giống nhau"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Theo bài giảng, kỳ phiếu có bao nhiêu nội dung bắt buộc?",
+        "goi_y": [
+            "A.6",
+            "B.7",
+            "C.8",
+            "D.9"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Nội dung nào sau đây không thuộc các nội dung bắt buộc của kỳ phiếu?",
+        "goi_y": [
+            "A.Địa điểm trả tiền",
+            "B.Người thụ hưởng",
+            "C.Người bị ký phát",
+            "D.Chữ ký người phát hành"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+    "cau_hoi": "Người trả tiền (Drawee) trên séc là:",
+    "goi_y": [
+        "A.Người mua",
+        "B.Người bán",
+        "C.Ngân hàng nơi người ký phát mở tài khoản",
+        "D.Ngân hàng trung gian"
+    ],
+    "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "Nội dung nào sau đây không bắt buộc trên tờ séc?",
+        "goi_y": [
+            "A.Tiêu đề 'Séc'",
+            "B.Lệnh trả tiền vô điều kiện",
+            "C.Điều kiện giao hàng",
+            "D.Tên người hưởng"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Ngày tháng và nơi ký séc nhằm mục đích:",
+        "goi_y": [
+            "A.Xác định số tiền",
+            "B.Xác định người hưởng",
+            "C.Xác định thời hạn hiệu lực của séc",
+            "D.Xác định tỷ giá"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Yếu tố nào sau đây là thông tin bắt buộc của người ký phát séc?",
+        "goi_y": [
+            "A.Mã số thuế",
+            "B.Số hiệu tài khoản",
+            "C.Số vận đơn",
+            "D.Mã SWIFT"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Nếu trên séc ghi điều kiện trả tiền thì theo quy định:",
+        "goi_y": [
+            "A.Séc vô hiệu",
+            "B.Điều kiện đó được coi như không có",
+            "C.Phải được ngân hàng chấp nhận",
+            "D.Người mua quyết định"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Theo bài giảng, yếu tố nào sau đây bị cấm ghi trên séc?",
+        "goi_y": [
+            "A.Người hưởng",
+            "B.Chữ ký",
+            "C.Tiền lãi",
+            "D.Địa điểm trả tiền"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Điều khoản miễn trừ bảo đảm trả tiền trên séc:",
+        "goi_y": [
+            "A.Có hiệu lực pháp lý",
+            "B.Chỉ áp dụng cho ngân hàng",
+            "C.Được coi như không có",
+            "D.Chỉ áp dụng với séc quốc tế"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Nếu trên séc có ghi điều khoản chấp nhận thanh toán thì:",
+        "goi_y": [
+            "A.Có hiệu lực",
+            "B.Phải được ngân hàng xác nhận",
+            "C.Được coi như không có",
+            "D.Làm tăng giá trị pháp lý của séc"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "ATM là viết tắt của:",
+        "goi_y": [
+            "A.Automatic Transfer Machine",
+            "B.Automatic Teller Machine",
+            "C.Automatic Trade Machine",
+            "D.Automated Teller Method"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Loại thẻ sử dụng tiền có sẵn trong tài khoản là:",
+        "goi_y": [
+            "A.Credit Card",
+            "B.Debit Card",
+            "C.Smart Card",
+            "D.International Card"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Loại thẻ cho phép chi tiêu trước, trả tiền sau là:",
+        "goi_y": [
+            "A.Debit Card",
+            "B.ATM Card",
+            "C.Credit Card",
+            "D.Smart Card"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Theo bài giảng, loại thẻ nào sau đây thuộc nhóm thẻ thanh toán?",
+        "goi_y": [
+            "A.Thẻ ghi nợ",
+            "B.Thẻ tín dụng",
+            "C.Thẻ thông minh",
+            "D.Tất cả các đáp án trên"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Người trả tiền (Drawee) của séc là:",
+        "goi_y": [
+            "A.Người mua",
+            "B.Người bán",
+            "C.Ngân hàng giữ tài khoản của người ký phát",
+            "D.Người ký phát"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Điểm giống nhau giữa hối phiếu, kỳ phiếu và séc là:",
+        "goi_y": [
+            "A.Đều là chứng từ vận tải",
+            "B.Đều là phương tiện thanh toán quốc tế",
+            "C.Đều do ngân hàng phát hành",
+            "D.Đều là chứng từ sở hữu hàng hóa"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Đâu không phải là yếu tố bị cấm trên séc?",
+        "goi_y": [
+            "A.Điều kiện trả tiền",
+            "B.Tiền lãi",
+            "C.Người hưởng",
+            "D.Điều khoản miễn trừ bảo đảm thanh toán"
+        ],
+        "dap_an_dung": "C"
+    },
     ]
 # 3. Phần hiển thị và chấm điểm (Giữ nguyên cho tất cả các chương)
 st.header(f"📝 {chuong_da_chon}")
