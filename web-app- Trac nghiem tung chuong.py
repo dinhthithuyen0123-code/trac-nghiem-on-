@@ -41,7 +41,7 @@ quy trình xuất nhập khẩu và các nghiệp vụ cảng biển mới nhấ
 # 2. Tạo thanh menu chọn chương ở bên trái màn hình (Sidebar)
 chuong_da_chon = st.sidebar.selectbox(
     "📚 Chọn Chương Ôn Tập:",
-    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Chương 8.1: Thanh toán quốc tế", "Chương 8.2: Thanh toán quốc tế", "Câu hỏi hỗn hợp", "Đề 1","Đề 2", "Đề 3", "Đề 4", "Đề 5", "Đề 6"]
+    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Chương 8.1: Thanh toán quốc tế", "Chương 8.2: Thanh toán quốc tế", "Chương 8.3: Thanh toán quốc tế", "Câu hỏi hỗn hợp", "Đề 1","Đề 2", "Đề 3", "Đề 4", "Đề 5", "Đề 6"]
 )
 # Hiển thị số lượt truy cập nhỏ ở góc dưới sidebar để bạn theo dõi
 st.sidebar.write(f"📊 **Tổng số lượt truy cập:** {tong_luot}")
@@ -3736,6 +3736,402 @@ elif chuong_da_chon == "Đề 4":
         "D.Không xác định"
         ],
         "dap_an_dung": "B"
+    }
+    ]
+elif chuong_da_chon == "Chương 8.3: Thanh toán quốc tế":
+    cac_cau_hoi =[  
+      {
+    "cau_hoi": "Các điều kiện chủ yếu trong thanh toán quốc tế gồm:",
+    "goi_y": [
+        "A.Điều kiện về tiền tệ",
+        "B.Điều kiện về địa điểm thanh toán",
+        "C.Điều kiện về thời gian thanh toán và phương thức thanh toán",
+        "D.Tất cả các đáp án trên"
+    ],
+    "dap_an_dung": "D"
+    },
+
+    {
+    "cau_hoi": "Đồng tiền tính toán (Accounting Currency) là đồng tiền dùng để:",
+    "goi_y": [
+        "A.Thanh toán công nợ",
+        "B.Biểu hiện giá cả hàng hóa và tính tổng giá trị hợp đồng ngoại thương",
+        "C.Mở L/C",
+        "D.Chuyển tiền qua ngân hàng"
+    ],
+    "dap_an_dung": "B"
+    },
+
+    {
+    "cau_hoi": "Đồng tiền thanh toán (Payment Currency) là:",
+    "goi_y": [
+        "A.Đồng tiền dùng để tính giá hàng hóa",
+        "B.Đồng tiền dùng để thanh toán giá trị hợp đồng và công nợ",
+        "C.Đồng tiền của nước xuất khẩu",
+        "D.Đồng tiền của nước nhập khẩu"
+    ],
+    "dap_an_dung": "B"
+    },
+
+    {
+    "cau_hoi": "Địa điểm thanh toán phụ thuộc vào yếu tố nào sau đây?",
+    "goi_y": [
+        "A.Tương quan lực lượng giữa hai bên trong hợp đồng",
+        "B.Phương thức thanh toán",
+        "C.Đồng tiền thanh toán",
+        "D.Tất cả các đáp án trên"
+    ],
+    "dap_an_dung": "D"
+    },
+
+    {
+    "cau_hoi": "Trong phương thức trả tiền trước (Advance Payment):",
+    "goi_y": [
+        "A.Người bán giao hàng trước rồi mới thu tiền",
+        "B.Người mua thanh toán trước khi người bán giao hàng",
+        "C.Người mua thanh toán sau khi nhận hàng",
+        "D.Hai bên thanh toán cùng lúc"
+    ],
+    "dap_an_dung": "B"
+    },
+
+    {
+    "cau_hoi": "Trong phương thức trả tiền trước, bên chịu rủi ro lớn hơn là:",
+    "goi_y": [
+        "A.Người bán",
+        "B.Người mua",
+        "C.Ngân hàng",
+        "D.Hãng tàu"
+    ],
+    "dap_an_dung": "B"
+    },
+
+    {
+    "cau_hoi": "Theo bài học, phương thức trả tiền trước thường áp dụng khi:",
+    "goi_y": [
+        "A.Người bán chưa tin tưởng người mua hoặc hàng hóa có giá trị lớn",
+        "B.Hai bên đã hợp tác lâu năm",
+        "C.Người mua có uy tín cao",
+        "D.Hàng hóa giao nhiều lần"
+    ],
+    "dap_an_dung": "A"
+    },
+
+    {
+    "cau_hoi": "Theo phương thức trả tiền ngay (At Sight Payment), việc thanh toán có thể diễn ra:",
+    "goi_y": [
+        "A.Khi người bán giao hàng dưới quyền định đoạt của người mua",
+        "B.Khi người bán xuất trình bộ chứng từ hàng hóa",
+        "C.Ngay sau khi người nhập khẩu nhận hàng theo quy định",
+        "D.Tất cả các đáp án trên"
+    ],
+    "dap_an_dung": "D"
+    },
+
+    {
+    "cau_hoi": "Doanh nghiệp A yêu cầu khách hàng thanh toán toàn bộ tiền hàng trước khi giao hàng nhằm tránh rủi ro không thu được tiền. Doanh nghiệp A đang áp dụng:",
+    "goi_y": [
+        "A.Deferred Payment",
+        "B.At Sight Payment",
+        "C.Advance Payment",
+        "D.Combined Payment"
+    ],
+    "dap_an_dung": "C"
+    },
+
+    {
+    "cau_hoi": "Để phòng ngừa rủi ro do biến động tỷ giá trong thanh toán quốc tế, doanh nghiệp có thể sử dụng:",
+    "goi_y": [
+        "A.Hợp đồng kỳ hạn (Forward)",
+        "B.Hợp đồng hoán đổi (Swap)",
+        "C.Hợp đồng tương lai (Futures) hoặc hợp đồng quyền chọn (Options)",
+        "D.Tất cả các đáp án trên"
+    ],
+    "dap_an_dung": "D"
+    },
+
+    {
+    "cau_hoi": "Điểm khác nhau cơ bản giữa đồng tiền tính toán và đồng tiền thanh toán là:",
+    "goi_y": [
+        "A.Đồng tiền tính toán dùng để ghi giá hợp đồng; đồng tiền thanh toán dùng để thanh toán thực tế",
+        "B.Hai loại đồng tiền luôn giống nhau",
+        "C.Đồng tiền thanh toán chỉ là USD",
+        "D.Đồng tiền tính toán chỉ dùng trong kế toán"
+    ],
+    "dap_an_dung": "A"
+    },
+
+    {
+    "cau_hoi": "Trong phương thức Advance Payment, người bán hầu như không chịu rủi ro vì:",
+    "goi_y": [
+        "A.Đã nhận được tiền trước khi giao hàng",
+        "B.Có bảo hiểm hàng hóa",
+        "C.Có ngân hàng bảo lãnh",
+        "D.Hàng hóa đã lên tàu"
+    ],
+    "dap_an_dung": "A"
+    },
+
+    {
+    "cau_hoi": "Yếu tố nào sau đây không ảnh hưởng đến địa điểm thanh toán?",
+    "goi_y": [
+        "A.Phương thức thanh toán",
+        "B.Đồng tiền thanh toán",
+        "C.Quan hệ giữa hai bên",
+        "D.Loại phương tiện vận tải sử dụng"
+    ],
+    "dap_an_dung": "D"
+    },
+    {
+    "cau_hoi": "Chứng từ trong thanh toán quốc tế là:",
+    "goi_y": [
+        "A.Văn bản chỉ chứa thông tin về hàng hóa",
+        "B.Văn bản chứa thông tin về hàng hóa, vận tải, bảo hiểm, thanh toán để nhận hàng, thanh toán hoặc khiếu nại",
+        "C.Chỉ là hóa đơn thương mại",
+        "D.Chỉ là chứng từ ngân hàng"
+    ],
+    "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Hệ thống chứng từ trong thanh toán quốc tế được chia thành:",
+        "goi_y": [
+            "A.Chứng từ xuất khẩu và nhập khẩu",
+            "B.Chứng từ thương mại và chứng từ tài chính",
+            "C.Chứng từ ngân hàng và hải quan",
+            "D.Chứng từ vận tải và bảo hiểm"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Chứng từ nào sau đây thuộc chứng từ tài chính?",
+        "goi_y": [
+            "A.Hóa đơn thương mại",
+            "B.Vận đơn đường biển",
+            "C.Hối phiếu",
+            "D.Phiếu đóng gói"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Chứng từ nào sau đây không thuộc chứng từ thương mại?",
+        "goi_y": [
+            "A.Phiếu đóng gói (Packing List)",
+            "B.Giấy chứng nhận xuất xứ (C/O)",
+            "C.Hối phiếu (Bill of Exchange)",
+            "D.Bảo hiểm đơn (Insurance Policy)"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Khi nhà xuất khẩu không thường xuyên mua bảo hiểm cho hàng hóa, công ty bảo hiểm sẽ cấp:",
+        "goi_y": [
+            "A.Giấy chứng nhận bảo hiểm",
+            "B.Hợp đồng bảo hiểm bao",
+            "C.Bảo hiểm đơn (Insurance Policy)",
+            "D.Chứng thư giám định"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Khi nhà xuất khẩu bán hàng thường xuyên, công ty bảo hiểm sẽ ký:",
+        "goi_y": [
+            "A.Bảo hiểm đơn",
+            "B.Hợp đồng bảo hiểm bao (Open Policy/Open Cover)",
+            "C.Hợp đồng vận tải",
+            "D.Hối phiếu"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Sau mỗi lần giao hàng theo hợp đồng bảo hiểm bao, công ty bảo hiểm sẽ phát hành:",
+        "goi_y": [
+            "A.Hóa đơn thương mại",
+            "B.Vận đơn",
+            "C.Giấy chứng nhận bảo hiểm (Insurance Certificate)",
+            "D.Hối phiếu"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Theo UCP 600, số tiền bảo hiểm tối thiểu thường phải bằng:",
+        "goi_y": [
+            "A.100% giá FOB",
+            "B.105% giá CIF",
+            "C.110% giá CIF hoặc CIP (hoặc giá trị hóa đơn theo quy định)",
+            "D.120% giá CIF"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Chứng từ nào xác nhận xuất xứ hàng hóa?",
+        "goi_y": [
+            "A.Commercial Invoice",
+            "B.Packing List",
+            "C.Certificate of Origin (C/O)",
+            "D.Certificate of Quality"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Chứng từ nào dùng để thể hiện quy cách đóng gói, số kiện, trọng lượng và cách sắp xếp hàng hóa?",
+        "goi_y": [
+            "A.Commercial Invoice",
+            "B.Packing List",
+            "C.Insurance Policy",
+            "D.Bill of Lading"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Điểm khác nhau giữa Insurance Policy và Insurance Certificate là:",
+        "goi_y": [
+            "A.Insurance Policy dùng cho lô hàng đơn lẻ; Insurance Certificate được cấp cho từng lô hàng khi đã có hợp đồng bảo hiểm bao",
+            "B.Hai loại hoàn toàn giống nhau",
+            "C.Insurance Certificate chỉ dùng cho hàng nhập khẩu",
+            "D.Insurance Policy chỉ do ngân hàng phát hành"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Chứng từ nào sau đây không phải là chứng từ hàng hóa?",
+        "goi_y": [
+            "A.Commercial Invoice",
+            "B.Packing List",
+            "C.Certificate of Origin",
+            "D.Bill of Exchange"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Một doanh nghiệp xuất khẩu thực phẩm sang châu Âu cần chứng minh hàng hóa có nguồn gốc từ Việt Nam để được hưởng ưu đãi thuế quan. Chứng từ quan trọng nhất là:",
+        "goi_y": [
+            "A.Packing List",
+            "B.Commercial Invoice",
+            "C.Certificate of Origin (C/O)",
+            "D.Insurance Certificate"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+    "cau_hoi": "Hóa đơn thương mại (Commercial Invoice) là chứng từ do:",
+    "goi_y": [
+        "A.Ngân hàng lập",
+        "B.Người mua lập",
+        "C.Người bán lập, thể hiện số tiền người mua phải thanh toán",
+        "D.Hãng tàu lập"
+    ],
+    "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Nội dung nào sau đây không bắt buộc phải có trong Hóa đơn thương mại?",
+        "goi_y": [
+            "A.Điều kiện giao hàng",
+            "B.Điều kiện thanh toán",
+            "C.Chi tiết hàng hóa",
+            "D.Vận đơn đường biển"
+        ],
+        "dap_an_dung": "D"
+    },
+
+    {
+        "cau_hoi": "Chức năng quan trọng nhất của Hóa đơn thương mại là:",
+        "goi_y": [
+            "A.Là căn cứ tính thuế xuất nhập khẩu và số tiền bảo hiểm",
+            "B.Xác nhận xuất xứ hàng hóa",
+            "C.Xác nhận hàng đã lên tàu",
+            "D.Chứng minh quyền sở hữu hàng hóa"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Phiếu đóng gói hàng hóa (Packing List) khác Hóa đơn thương mại ở điểm:",
+        "goi_y": [
+            "A.Không ghi thông tin về hàng hóa",
+            "B.Không thể hiện đơn giá, trị giá và điều kiện thanh toán",
+            "C.Do ngân hàng phát hành",
+            "D.Chỉ dùng trong nhập khẩu"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Thông tin quan trọng nhất của Packing List là:",
+        "goi_y": [
+            "A.Đơn giá hàng hóa",
+            "B.Điều kiện thanh toán",
+            "C.Quy cách đóng gói, trọng lượng và kích thước hàng hóa",
+            "D.Tỷ giá thanh toán"
+        ],
+        "dap_an_dung": "C"
+    },
+
+    {
+        "cau_hoi": "Giấy chứng nhận xuất xứ hàng hóa (C/O) có chức năng:",
+        "goi_y": [
+            "A.Xác nhận nơi sản xuất hoặc khai thác hàng hóa",
+            "B.Xác nhận hàng đã thanh toán",
+            "C.Xác nhận hàng đã lên tàu",
+            "D.Xác nhận bảo hiểm"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Một trong những mục đích quan trọng của C/O là:",
+        "goi_y": [
+            "A.Xác định mức thuế xuất nhập khẩu được hưởng",
+            "B.Xác định giá CIF",
+            "C.Xác định cước vận tải",
+            "D.Xác định tỷ giá ngoại tệ"
+        ],
+        "dap_an_dung": "A"
+    },
+
+    {
+        "cau_hoi": "Theo bài học, Form D được sử dụng cho hàng hóa:",
+        "goi_y": [
+            "A.Xuất khẩu sang Hoa Kỳ",
+            "B.Xuất khẩu trong khối ASEAN để hưởng ưu đãi thuế quan",
+            "C.Xuất khẩu sang Nhật Bản",
+            "D.Xuất khẩu sang EU"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Tại Việt Nam, cơ quan tổ chức thực hiện việc cấp C/O là:",
+        "goi_y": [
+            "A.Bộ Tài chính",
+            "B.Bộ Công Thương",
+            "C.Ngân hàng Nhà nước",
+            "D.Tổng cục Hải quan"
+        ],
+        "dap_an_dung": "B"
+    },
+
+    {
+        "cau_hoi": "Bộ Công Thương có thể ủy quyền cấp C/O cho:",
+        "goi_y": [
+            "A.Phòng Thương mại và Công nghiệp Việt Nam (VCCI)",
+            "B.Cục Quản lý Xuất nhập khẩu",
+            "C.Ban quản lý một số khu công nghiệp, khu chế xuất",
+            "D.Tất cả các đáp án trên"
+        ],
+        "dap_an_dung": "D"
     }
     ]
 # 3. Phần hiển thị và chấm điểm (Giữ nguyên cho tất cả các chương)
