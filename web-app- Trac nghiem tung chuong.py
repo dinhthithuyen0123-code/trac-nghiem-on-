@@ -41,7 +41,7 @@ quy trình xuất nhập khẩu và các nghiệp vụ cảng biển mới nhấ
 # 2. Tạo thanh menu chọn chương ở bên trái màn hình (Sidebar)
 chuong_da_chon = st.sidebar.selectbox(
     "📚 Chọn Chương Ôn Tập:",
-    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Chương 8.1: Thanh toán quốc tế", "Chương 8.2: Thanh toán quốc tế", "Chương 8.3: Thanh toán quốc tế", "Chương 8.4: Thanh toán quốc tế", "Câu hỏi hỗn hợp", "Đề 1","Đề 2", "Đề 3", "Đề 4", "Đề 5", "Đề 6"]
+    ["Chương 1: Tổng quan về giao nhận hàng hóa", "Chương 2: Giao nhận bằng đường biển", "Chương 8.1: Thanh toán quốc tế", "Chương 8.2: Thanh toán quốc tế", "Chương 8.3: Thanh toán quốc tế", "Chương 8.4: Thanh toán quốc tế", "Câu hỏi hỗn hợp", "Đề 1","Đề 2", "Đề 3", "Đề 4", "Đề 5", "Đề 6","Incoterm"]
 )
 # Hiển thị số lượt truy cập nhỏ ở góc dưới sidebar để bạn theo dõi
 st.sidebar.write(f"📊 **Tổng số lượt truy cập:** {tong_luot}")
@@ -4528,6 +4528,921 @@ elif chuong_da_chon == "Chương 8.4: Thanh toán quốc tế":
         ],
         "dap_an_dung": "C"
     },
+    ]
+elif chuong_da_chon == "Incoterm":
+    cac_cau_hoi =[  
+      {
+        "cau_hoi": "Incoterms xuất bản lần đầu tiên vào năm nào?",
+        "goi_y": [
+            "A. 1928",
+            "B. 1930",
+            "C. 1936",
+            "D. 1942"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "Incoterms đến thời điểm hiện tại bao gồm bao nhiêu ấn bản được phát hành?",
+        "goi_y": [
+            "A. 7",
+            "B. 8",
+            "C. 9",
+            "D. 10"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Incoterms đến thời điểm hiện tại có bao nhiêu lần sửa đổi và lần sửa đổi cuối cùng vào?",
+        "goi_y": [
+            "A. 6 – 2000",
+            "B. 7 – 2000",
+            "C. 6 – 2010",
+            "D. 7 – 2010"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Incoterms là ... do Phòng Thương mại quốc tế (ICC) phát hành để giải thích...?",
+        "goi_y": [
+            "A. Bộ luật – Các bộ luật thương mại quốc tế",
+            "B. Bộ quy tắc – Các điều kiện thương mại quốc tế",
+            "C. Bộ điều kiện thương mại quốc tế – Các bộ luật thương mại quốc tế",
+            "D. Văn bản – Các điều kiện thương mại quốc tế"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Năm xuất bản đầu tiên và trình tự các lần sửa đổi của Incoterms?",
+        "goi_y": [
+            "A. 1933 – 1936, 1953, 1967, 1980, 1990, 2000, 2010",
+            "B. 1936 – 1953, 1967, 1976, 1980, 1990, 2000, 2010",
+            "C. 1938 – 1958, 1967, 1982, 1990, 1995, 2000, 2010",
+            "D. 1940 – 1953, 1967, 1976, 1980, 1990, 2000, 2010"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Mục đích của Incoterms là:",
+        "goi_y": [
+            "A. Làm rõ sự phân chia trách nhiệm, chi phí và rủi ro trong quá trình chuyển hàng từ người bán đến người mua.",
+            "B. Giúp các bên mua bán tránh những vụ kiện tụng, làm lãng phí thời gian và tiền bạc.",
+            "C. Đề cập tới việc chuyển giao sở hữu hàng hóa và các quyền khác về tài sản.",
+            "D. Hậu quả của sự vi phạm hợp đồng và miễn trừ nghĩa vụ trong những hoàn cảnh nhất định.",
+            "E. Câu A, B đều đúng",
+            "F. Câu A, B, C, D đều đúng"
+        ],
+        "dap_an_dung": "E"
+    },
+    {
+        "cau_hoi": "Incoterms không đề cập tới:",
+        "goi_y": [
+            "A. Việc chuyển giao sở hữu hàng hóa và các quyền khác về tài sản.",
+            "B. Hậu quả của sự vi phạm hợp đồng và miễn trừ nghĩa vụ trong những hoàn cảnh nhất định.",
+            "C. Cả A và B đều đúng.",
+            "D. Cả A và B đều sai."
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "Incoterms vào năm nào đã mở rộng cho cả thương mại nội địa?",
+        "goi_y": [
+            "A. 1980",
+            "B. 1990",
+            "C. 2000",
+            "D. 2010"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "ICC là chữ viết tắt của:",
+        "goi_y": [
+            "A. International Chamber of Commerce",
+            "B. International Chamber of Commercial",
+            "C. Cả A và B đều đúng",
+            "D. Cả A và B đều sai"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Incoterms là chữ viết tắt của:",
+        "goi_y": [
+            "A. International Company Terms",
+            "B. International Commercial Terms",
+            "C. International Commerce Terms",
+            "D. Cả 3 câu trên đều sai"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Incoterms là bộ quy tắc do ai phát hành để giải thích các điều kiện thương mại quốc tế?",
+        "goi_y": [
+            "A. Phòng thương mại",
+            "B. Phòng thương mại quốc tế",
+            "C. Cả 2 câu trên đúng",
+            "D. Cả 2 câu trên sai"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Incoterms áp dụng cho:",
+        "goi_y": [
+            "A. Chủ yếu áp dụng cho hợp đồng vận tải",
+            "B. Áp dụng cho hàng hóa vô hình",
+            "C. Áp dụng cho hàng hóa hữu hình",
+            "D. Cả 3 câu trên đều đúng"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "Trong thực tế có hai kiểu nhầm lẫn về Incoterms:",
+        "goi_y": [
+            "A. Incoterms chủ yếu áp dụng cho các hợp đồng vận tải",
+            "B. Incoterms áp dụng cho tất cả nghĩa vụ trong hợp đồng mua bán hàng hóa",
+            "C. Incoterms áp dụng cho cả hàng hóa hữu hình và vô hình",
+            "D. Cả 3 câu trên đều đúng"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Incoterms được sửa đổi hoàn thiện hơn lần trước:",
+        "goi_y": [
+            "A. Không phủ định lần trước, cần ghi rõ phiên bản trong hợp đồng",
+            "B. Phủ định lần trước, cần ghi rõ phiên bản trong hợp đồng",
+            "C. Không phủ định lần trước, không cần ghi rõ phiên bản",
+            "D. Tùy trường hợp áp dụng"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Incoterms là sản phẩm của ICC, là quy phạm:",
+        "goi_y": [
+            "A. Không mang tính bắt buộc mà mang tính khuyên nhủ, nên không mặc nhiên áp dụng",
+            "B. Mang tính bắt buộc và mang tính khuyên nhủ",
+            "C. Không mang tính bắt buộc nhưng mặc nhiên áp dụng",
+            "D. Tất cả đều sai"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Incoterms 1980 có bao nhiêu điều kiện?",
+        "goi_y": [
+            "A. 11",
+            "B. 12",
+            "C. 13",
+            "D. 14"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Incoterms 1990 và 2000 có bao nhiêu điều kiện và được phân thành mấy nhóm?",
+        "goi_y": [
+            "A. 11 – 2 nhóm",
+            "B. 12 – 2 nhóm",
+            "C. 13 – 4 nhóm",
+            "D. 14 – 4 nhóm"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "Incoterms 2010 có bao nhiêu điều kiện và được phân thành mấy nhóm?",
+        "goi_y": [
+            "A. 11 – 2 nhóm",
+            "B. 12 – 2 nhóm",
+            "C. 13 – 3 nhóm",
+            "D. 14 – 4 nhóm"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "EXW (...) Incoterms 2010, FCA (...) Incoterms 2010 điền vào chỗ trống?",
+        "goi_y": [
+            "A. Tên địa điểm giao hàng",
+            "B. Nơi đến quy định",
+            "C. Cảng bốc quy định",
+            "D. Cảng đến quy định"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "CPT/CIP/DAT/DAP/DDP (...) Incoterms 2010 điền vào chỗ trống?",
+        "goi_y": [
+            "A. Tên địa điểm giao hàng",
+            "B. Nơi đến quy định",
+            "C. Cảng bốc quy định",
+            "D. Cảng đến quy định"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "FAS/FOB (...) Incoterms 2010 điền vào chỗ trống?",
+        "goi_y": [
+            "A. Tên địa điểm giao hàng",
+            "B. Nơi đến quy định",
+            "C. Cảng bốc quy định",
+            "D. Cảng đến quy định"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "CFR/CIF (...) Incoterms 2010 điền vào chỗ trống?",
+        "goi_y": [
+            "A. Tên địa điểm giao hàng",
+            "B. Nơi đến quy định",
+            "C. Cảng bốc quy định",
+            "D. Cảng đến quy định"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Theo điều kiện EXW (named place) Incoterms 2010 thì người bán:",
+        "goi_y": [
+            "A. Giao hàng dưới quyền định đoạt của người mua tại cơ sở người bán hoặc địa điểm quy định",
+            "B. Hỗ trợ làm thủ tục xuất khẩu khi được yêu cầu với chi phí người mua",
+            "C. Giao hàng và chứng từ theo hợp đồng",
+            "D. Tất cả đều đúng"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Theo điều kiện EXW (...) Incoterms 2010 thì ai làm thủ tục thông quan xuất khẩu?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Tùy trường hợp",
+            "D. Hai bên chia đôi chi phí"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện EXW (...) Incoterms 2010 thì ai bốc hàng lên phương tiện tiếp nhận?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Người lái phương tiện",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Trong tất cả các điều kiện Incoterms 2010, điều kiện nào người mua chịu chi phí và rủi ro cao nhất?",
+        "goi_y": [
+            "A. DAT",
+            "B. FAS",
+            "C. DDP",
+            "D. EXW"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Theo điều kiện EXW, sau khi mua hàng phát hiện bao bì đóng gói bị rách, trách nhiệm thuộc về ai?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Bên bảo hiểm",
+            "D. Chưa đủ dữ liệu"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện EXW (...) Incoterms 2010 thì người mua sẽ:",
+        "goi_y": [
+            "A. Chịu mọi trách nhiệm bốc hàng, thuê vận tải, thủ tục xuất nhập khẩu và dỡ hàng",
+            "B. Không chịu các trách nhiệm trên",
+            "C. Chỉ chịu bốc hàng và cước vận tải chính",
+            "D. Tất cả đều sai"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo Incoterms 2010, nhóm EXW, FCA, CPT, CIP, DAT, DAP, DDP áp dụng cho:",
+        "goi_y": [
+            "A. Vận tải đa phương thức",
+            "B. Mọi phương tiện vận tải",
+            "C. Đường biển và đường thủy nội địa",
+            "D. Đường hàng không"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo Incoterms 2010, nhóm FAS, FOB, CFR, CIF áp dụng cho:",
+        "goi_y": [
+            "A. Vận tải đa phương thức",
+            "B. Mọi phương tiện vận tải",
+            "C. Đường biển và đường thủy nội địa",
+            "D. Đường hàng không"
+        ],
+        "dap_an_dung": "C"
+    },
+     {
+        "cau_hoi": "Theo điều kiện FCA (...) Incoterms 2010 thì ai sẽ là người chịu trách nhiệm thông quan nhập khẩu?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Tùy trường hợp",
+            "D. Người bán và người mua chia đôi chi phí"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện FCA (...) Incoterms 2010 thì ai sẽ là người chịu trách nhiệm thông quan xuất khẩu?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Tùy trường hợp",
+            "D. Người bán và người mua chia đôi chi phí"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện FCA (...) Incoterms 2010, nếu người mua yêu cầu giao hàng tại xưởng của người bán thì ai có trách nhiệm bốc hàng lên phương tiện vận tải?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Tùy trường hợp",
+            "D. Người bán và người mua chia đôi chi phí"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện FCA (...) Incoterms 2010, nếu người mua yêu cầu giao hàng tại địa điểm khác với xưởng người bán thì ai chịu trách nhiệm dỡ hàng xuống phương tiện vận tải phụ?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Tùy trường hợp",
+            "D. Người bán và người mua chia đôi chi phí"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện FCA (...) Incoterms 2010 thì ai là người trả chi phí vận tải chính?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Tùy trường hợp",
+            "D. Người bán và người mua chia đôi chi phí"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện FCA (...) Incoterms 2010, ai là người chỉ định phương tiện vận tải phụ, người chuyên chở?",
+        "goi_y": [
+            "A. Người mua",
+            "B. Người bán",
+            "C. Tùy trường hợp",
+            "D. Người chuyên chở miễn phí chi phí thuê"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện EXW, ngày 15/9/2014 người bán thông báo giao lô hàng cà phê, người mua xác nhận phương tiện sẽ đến nhận chiều cùng ngày. Đêm hôm đó hàng bị cháy, sáng hôm sau phương tiện mới đến. Ai chịu rủi ro?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Cả người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện CPT (...) Incoterms 2010, thời điểm chuyển giao rủi ro từ người bán sang người mua là ở đâu?",
+        "goi_y": [
+            "A. Khi hàng hóa giao cho người chuyên chở đầu tiên",
+            "B. Khi hàng hóa tại xưởng người bán",
+            "C. Khi hàng hóa được dỡ khỏi phương tiện vận tải chính",
+            "D. Khi hàng hóa được xếp trên tàu người mua"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện CPT (...) Incoterms 2010, ai là người trả chi phí cho phương tiện vận tải chính?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Cả người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện CPT (...) Incoterms 2010, ai là người làm thủ tục thông quan nhập khẩu?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Cả người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện CPT (...) Incoterms 2010 thì người bán có trách nhiệm:",
+        "goi_y": [
+            "A. Đóng gói, bao bì, dán nhãn hàng hóa",
+            "B. Bốc hàng lên phương tiện vận tải phụ",
+            "C. Bốc hàng lên phương tiện vận tải chính",
+            "D. Cả A, B, C đều đúng"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Theo điều kiện CPT (...) Incoterms 2010 thì ai là người dỡ hàng ở phương tiện vận tải phụ?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Cả người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Điều kiện CIP (...) Incoterms 2010 khác với điều kiện CPT ở điểm nào?",
+        "goi_y": [
+            "A. Người bán mua bảo hiểm cho người bán",
+            "B. Người bán mua bảo hiểm cho người mua",
+            "C. Người mua mua bảo hiểm cho người mua",
+            "D. Người mua mua bảo hiểm cho người bán"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện CPT (...) Incoterms 2010, người bán giao hàng qua đường bộ, đường biển, đường hàng không. Sau khi giao cho phương tiện đường bộ, tàu bị chìm do bão. Ai chịu rủi ro?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Cả người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DAT (...) Incoterms 2010, ai sẽ là người thông quan xuất khẩu?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Cả người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DAT (...) Incoterms 2010, ai sẽ là người thông quan nhập khẩu?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DAT (...) Incoterms 2010, ai sẽ là người chịu trách nhiệm bốc hàng và dỡ hàng xuống phương tiện vận tải chính?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DAT (...) Incoterms 2010, ai là người chịu chi phí thuê phương tiện vận tải chính?",
+        "goi_y": [
+            "A. Người mua",
+            "B. Người bán",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DAT (...) Incoterms 2010, ai sẽ là người chịu trách nhiệm dỡ hàng xuống phương tiện vận tải phụ?",
+        "goi_y": [
+            "A. Người mua",
+            "B. Người bán",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DAT (...) Incoterms 2010, người bán vận chuyển hàng hóa bằng đường bộ gặp tai nạn làm hàng bị hỏng. Ai chịu rủi ro?",
+        "goi_y": [
+            "A. Người mua",
+            "B. Người bán",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DAP (...) Incoterms 2010, ai là người chịu chi phí thuê phương tiện vận tải phụ để chở hàng đến nơi người mua?",
+        "goi_y": [
+            "A. Người mua",
+            "B. Người bán",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DAP (...) Incoterms 2010, ai sẽ là người thông quan xuất khẩu?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DAP (...) Incoterms 2010, ai sẽ là người thông quan nhập khẩu?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DAP (...) Incoterms 2010, ai sẽ là người chịu trách nhiệm bốc hàng và dỡ hàng xuống phương tiện vận tải chính?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DAP (...) Incoterms 2010, ai là người chịu chi phí thuê phương tiện vận tải chính?",
+        "goi_y": [
+            "A. Người mua",
+            "B. Người bán",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DAP (...) Incoterms 2010, ai sẽ là người chịu trách nhiệm dỡ hàng xuống phương tiện vận tải phụ?",
+        "goi_y": [
+            "A. Người mua",
+            "B. Người bán",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DAP (...) Incoterms 2010, người bán vận chuyển hàng hóa bằng đường hàng không gặp tai nạn làm hàng bị hỏng. Ai chịu rủi ro?",
+        "goi_y": [
+            "A. Người mua",
+            "B. Người bán",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DAP (...) Incoterms 2010, người bán giao hàng khi hàng hóa được đặt dưới quyền định đoạt của người mua trên phương tiện vận tải, ... tại?",
+        "goi_y": [
+            "A. Sẵn sàng để dỡ - nơi đến quy định",
+            "B. Đã dỡ xuống phương tiện vận tải - địa điểm giao hàng",
+            "C. Sẵn sàng để dỡ - điểm tập kết",
+            "D. Đã dỡ xuống phương tiện vận tải - cảng người mua"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DDP (...) thì:",
+        "goi_y": [
+            "A. Người bán chịu rủi ro và chi phí cao nhất",
+            "B. Người mua chịu rủi ro và chi phí cao nhất",
+            "C. Người bán chịu chi phí cao nhất và người mua chịu rủi ro cao nhất",
+            "D. Người mua chịu chi phí cao nhất và người bán chịu rủi ro cao nhất"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Trong các điều kiện nào sau đây người bán phải làm thủ tục thông quan nhập khẩu?",
+        "goi_y": [
+            "A. DDP",
+            "B. EXW",
+            "C. DAT",
+            "D. FCA"
+        ],
+        "dap_an_dung": "A"
+    },
+      {
+        "cau_hoi": "Theo điều kiện DDP (...) Incoterms 2010, ai sẽ là người chịu trách nhiệm bốc hàng và dỡ hàng xuống phương tiện vận tải chính?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DDP (...) Incoterms 2010, ai sẽ là người thông quan xuất khẩu?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DDP (...) Incoterms 2010, ai sẽ là người thông quan nhập khẩu?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DDP (...) Incoterms 2010, ai là người chịu chi phí thuê phương tiện vận tải chính?",
+        "goi_y": [
+            "A. Người mua",
+            "B. Người bán",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DDP (...) Incoterms 2010, ai sẽ là người chịu trách nhiệm dỡ hàng xuống phương tiện vận tải phụ?",
+        "goi_y": [
+            "A. Người mua",
+            "B. Người bán",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện DDP (...) Incoterms 2010, người bán vận chuyển hàng hóa bằng đường bộ gặp tai nạn làm hàng bị hỏng. Ai chịu rủi ro?",
+        "goi_y": [
+            "A. Người mua",
+            "B. Người bán",
+            "C. Người bán và người mua",
+            "D. Tùy trường hợp"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Người bán bán hàng hóa theo điều kiện X, trong đó người bán thông quan xuất khẩu, mua bảo hiểm cho người mua, thuê phương tiện vận tải chính và trả chi phí; người mua chịu rủi ro ngay sau khi hàng được giao cho người chuyên chở đầu tiên. X là?",
+        "goi_y": [
+            "A. FCA",
+            "B. CPT",
+            "C. DDP",
+            "D. CIP"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Người bán bán hàng hóa theo điều kiện X, trong đó người bán thông quan xuất khẩu, thuê phương tiện vận tải chính và trả chi phí; người mua chịu rủi ro ngay sau khi hàng được giao cho người chuyên chở đầu tiên. X là?",
+        "goi_y": [
+            "A. DDP",
+            "B. CPT",
+            "C. FOB",
+            "D. CIF"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Người bán bán hàng hóa theo điều kiện X, trong đó người bán thông quan xuất khẩu, nhập khẩu, thuê phương tiện vận tải chính và trả chi phí, chịu trách nhiệm dỡ hàng và bốc hàng lên phương tiện vận tải chính. X là?",
+        "goi_y": [
+            "A. DAT",
+            "B. FOB",
+            "C. DDP",
+            "D. FCA"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "Người bán bán hàng hóa theo điều kiện X, trong đó người mua thông quan xuất khẩu, nhập khẩu, thuê phương tiện vận tải chính và trả chi phí, chịu trách nhiệm dỡ hàng và bốc hàng lên phương tiện vận tải chính. X là?",
+        "goi_y": [
+            "A. EXW",
+            "B. DAP",
+            "C. DDP",
+            "D. CFR"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Người bán bán hàng hóa theo điều kiện X, trong đó người bán thông quan xuất khẩu, thuê phương tiện vận tải phụ và trả chi phí; nếu giao tại xưởng người bán thì người bán bốc hàng, nếu giao nơi khác thì người bán không chịu trách nhiệm dỡ hàng. X là?",
+        "goi_y": [
+            "A. EXW",
+            "B. FCA",
+            "C. DAT",
+            "D. FOB"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Điều kiện FAS và FOB dùng cho:",
+        "goi_y": [
+            "A. Mọi phương tiện vận tải",
+            "B. Vận tải đa phương thức",
+            "C. Vận tải hàng không",
+            "D. Vận tải đường biển, đường thủy nội địa"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Điều kiện CFR và CIF dùng cho:",
+        "goi_y": [
+            "A. Mọi phương tiện vận tải",
+            "B. Vận tải đa phương thức",
+            "C. Vận tải hàng không",
+            "D. Vận tải đường biển, đường thủy nội địa"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Điều kiện FAS/FOB (...) Incoterms 2010, điền vào chỗ trống?",
+        "goi_y": [
+            "A. Tên địa điểm giao hàng",
+            "B. Nơi đến quy định",
+            "C. Cảng bốc quy định",
+            "D. Cảng đến quy định"
+        ],
+        "dap_an_dung": "C"
+    },
+    {
+        "cau_hoi": "Điều kiện CFR/CIF (...) Incoterms 2010, điền vào chỗ trống?",
+        "goi_y": [
+            "A. Tên địa điểm giao hàng",
+            "B. Nơi đến quy định",
+            "C. Cảng bốc quy định",
+            "D. Cảng đến quy định"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Theo điều kiện FAS (...) Incoterms 2010, thời điểm chuyển rủi ro từ người bán sang người mua là?",
+        "goi_y": [
+            "A. Khi hàng hóa được đặt trên tàu",
+            "B. Khi hàng hóa được giao dọc mạn tàu",
+            "C. Khi hàng hóa giao qua lan can tàu",
+            "D. Cả A, B, C đều sai"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện FOB (...) Incoterms 2010, thời điểm chuyển rủi ro từ người bán sang người mua là?",
+        "goi_y": [
+            "A. Khi hàng hóa được đặt trên tàu",
+            "B. Khi hàng hóa được giao dọc mạn tàu",
+            "C. Khi hàng hóa giao qua lan can tàu",
+            "D. Cả A, B, C đều sai"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện FAS (...) Incoterms 2010, người bán có trách nhiệm nào sau đây?",
+        "goi_y": [
+            "A. Giao hàng hóa dọc mạn tàu",
+            "B. Thuê phương tiện vận tải phụ chở hàng đến cảng đi",
+            "C. Làm thủ tục thông quan xuất khẩu",
+            "D. Cả A, B, C đều đúng"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Theo điều kiện FOB (...) Incoterms 2010, người bán có trách nhiệm nào sau đây?",
+        "goi_y": [
+            "A. Giao hàng hóa dọc mạn tàu",
+            "B. Bốc hàng hóa lên tàu",
+            "C. Làm thủ tục thông quan xuất khẩu",
+            "D. B và C đều đúng"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Theo điều kiện CFR (...) Incoterms 2010, người bán có trách nhiệm nào sau đây?",
+        "goi_y": [
+            "A. Giao hàng hóa lên tàu",
+            "B. Thuê phương tiện vận tải chính chở hàng từ cảng đi đến cảng đến",
+            "C. Làm thủ tục thông quan nhập khẩu",
+            "D. Cả A, B, C đều đúng"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện CFR (...) Incoterms 2010, người bán không có trách nhiệm nào sau đây?",
+        "goi_y": [
+            "A. Giao hàng hóa lên tàu",
+            "B. Dỡ hàng xuống phương tiện vận tải chính",
+            "C. Làm thủ tục thông quan nhập khẩu",
+            "D. Cả A, B, C đều đúng"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Giá CIF có thể được tính bằng cách nào?",
+        "goi_y": [
+            "A. Giá FOB + cước phí + bảo hiểm",
+            "B. Giá CFR + bảo hiểm",
+            "C. Giá FOB + bảo hiểm",
+            "D. A và B đều đúng"
+        ],
+        "dap_an_dung": "D"
+    },
+    {
+        "cau_hoi": "Giá FOB là 100 USD, giá CFR là 115 USD, bảo hiểm 1 USD, cước phí 15 USD. Giá CIF bằng bao nhiêu?",
+        "goi_y": [
+            "A. 115 USD",
+            "B. 116 USD",
+            "C. 215 USD",
+            "D. 216 USD"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Điều kiện CIF (...) Incoterms 2010 khác điều kiện CFR ở điểm nào?",
+        "goi_y": [
+            "A. Người bán mua bảo hiểm cho người bán",
+            "B. Người bán mua bảo hiểm cho người mua",
+            "C. Người mua mua bảo hiểm cho người mua",
+            "D. Người mua mua bảo hiểm cho người bán"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện CFR và CIF, thời điểm chuyển giao rủi ro từ người bán sang người mua là khi nào?",
+        "goi_y": [
+            "A. Khi hàng được xếp ngay ngắn ở lan can tàu",
+            "B. Khi hàng được xếp lên tàu",
+            "C. Khi hàng được dỡ xuống phương tiện vận tải chính",
+            "D. Khi hàng được bốc lên phương tiện vận tải phụ ở cảng đi"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện CFR (...) Incoterms 2010, tàu gặp giông lớn làm chìm tàu và lô hàng. Ai chịu rủi ro?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Tùy trường hợp",
+            "D. Cả người bán và người mua"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Theo điều kiện CFR (...) Incoterms 2010, trong lúc bốc hàng lên tàu thì gãy cần cẩu làm hàng bị hỏng. Ai chịu rủi ro?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Tùy trường hợp",
+            "D. Cả người bán và người mua"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Theo điều kiện CIF (...) Incoterms 2010, ai là người chịu chi phí thuê tàu?",
+        "goi_y": [
+            "A. Người bán",
+            "B. Người mua",
+            "C. Tùy trường hợp",
+            "D. Cả người bán và người mua"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Giá CIP có thể được tính bằng cách nào?",
+        "goi_y": [
+            "A. Giá FCA + bảo hiểm + tiền hàng",
+            "B. Giá CPT + bảo hiểm",
+            "C. Giá DDP - bảo hiểm",
+            "D. Giá CPT + tiền hàng"
+        ],
+        "dap_an_dung": "B"
+    },
+    {
+        "cau_hoi": "Giá CPT là 100 USD, giá FCA là 90 USD, giá DDP là 200 USD, bảo hiểm là 1 USD và cước phí là 15 USD. Giá CIP bằng bao nhiêu?",
+        "goi_y": [
+            "A. 101 USD",
+            "B. 116 USD",
+            "C. 100 USD",
+            "D. 216 USD"
+        ],
+        "dap_an_dung": "A"
+    },
+    {
+        "cau_hoi": "Người bán thỏa thuận bán hàng theo điều kiện X, biết rằng người bán thuê phương tiện vận tải chính, trả chi phí, thông quan xuất khẩu, bốc hàng lên tàu và trả phí bảo hiểm. X là?",
+        "goi_y": [
+            "A. EXW",
+            "B. CPT",
+            "C. CFR",
+            "D. CIF"
+        ],
+        "dap_an_dung": "D"
+    }
     ]
 # 3. Phần hiển thị và chấm điểm (Giữ nguyên cho tất cả các chương)
 st.header(f"📝 {chuong_da_chon}")
