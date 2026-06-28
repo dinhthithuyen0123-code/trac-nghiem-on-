@@ -3354,7 +3354,7 @@ elif chuong_da_chon == "Đề 4":
         "dap_an_dung": "A"
     }
     ]
-elif chuong_da_chon == "Đề 4":
+elif chuong_da_chon == "Chương 8.2: Thanh toán quốc tế":
     cac_cau_hoi =[  
       {
         "cau_hoi": "Các điều kiện chủ yếu trong thanh toán quốc tế gồm:",
